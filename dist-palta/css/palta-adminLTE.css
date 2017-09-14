@@ -1,0 +1,534 @@
+
+/* ESTILOS GENERALES */
+
+.border-gray {
+	border:1px solid #ccc;
+}
+.bg-none, .bg-none:hover {
+  background: none !important;
+}
+
+/* texto con icono */
+.text-with-icon i{
+  padding-top: 2px;
+  float: left;
+}
+.text-with-icon h4{
+  padding-left: 20px;
+}
+
+.distribuir {
+  display:flex !important;
+  justify-content: space-around !important;
+}
+
+/* BOTON AGREGAR NUEVO - FA */
+
+.btn .fa.fa-lg{
+  line-height: 1em;
+  font-size: 1.7em;
+}
+
+/* BOTON CONTORNO */
+
+.btn-contorno {
+  background-color: white;
+  color: #0695D6;
+  padding: 14px 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+  border: 2px solid #0695D6;
+  border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+}
+
+.btn-contorno:hover {
+  border:2px solid #3c8dbc !important;
+  color: #3c8dbc;
+}
+
+.btn.btn-sm.bg-none {
+  background:none !important;
+  border-radius: 50%;
+  padding:6px 8px !important;
+}
+
+.btn.btn-sm.bg-none:hover {
+  background: #ffffff !important;
+  border-radius: 50%;
+  padding:6px 8px !important;
+}
+
+
+/* FORM-AZUL */
+
+
+.form-azul select, input {
+  border-radius: 4px !important;
+}
+
+.form-azul .panel-heading {
+  min-height:auto !important;
+}
+
+.form-group textarea.form-control{
+  font-size: 20px;
+  font-weight: 400;
+  height: 180px;
+  padding: 10px 20px;
+}
+
+/* implemento boton de select 
+.form-azul select.borrar-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+}
+
+.form-azul select + i.fa {
+  float: right;
+  margin-top: -54px;
+  margin-right: 5px;
+  pointer-events: none;
+  background-color: black;
+  padding: 17px 22px;
+  font-size: 20px;
+}*/
+
+
+/*TABLA*/
+
+/*ProgressBar en Tabla*/
+
+.progress-bar, .progress{
+  height: 0.5rem;
+}
+
+.table-item{
+  padding: 15px 0px;
+  margin: 0px 15px;
+  border-bottom: 1px solid #ccc;
+}
+
+.table-item:last-child{
+  border-bottom: none;
+}
+
+.box-body .table-responsive {
+  padding:20px;
+}
+
+.table-responsive tr:nth-child(1) td {
+  border-top: none;
+}
+
+/* BAR ABAJO  
+ .bottom-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+	clear:both;
+} */
+
+
+/* SECCIÓN BOTONERA */
+
+.section-botonera {
+  padding-bottom: 60px;
+}
+
+.section-botonera button.bg-white {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.section-botonera button.bg-white i {
+  margin-right: 5px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .section-botonera button {
+    margin: 8px 25px !important;
+  }
+
+	.table-responsive {
+		border: none;
+	}
+	
+	.mobileSelect-container {
+		width: 80%;
+		margin: 0 10%;
+	}	
+}
+
+
+.bootstrap-tagsinput {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    /* box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); */
+    display: inline-block;
+    padding: 8px 8px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    max-width: 100%;
+    line-height: 36px;
+    cursor: text;
+}
+.bootstrap-tagsinput .tag {
+    margin-right: 2px;
+    color: white;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.panel-admin .panel-heading {
+    min-height: 40px !important;
+}
+
+.navbar { 
+	border-radius:0
+}
+
+.mobileSelect-container {
+  width: 40%;
+  margin: 0 30%;
+} 
+
+/*--- Phone -----------------*/
+@media (max-width: 767px) {	
+	.mobileSelect-container {
+		width: 90% !important;
+		margin: 0 5%;
+	}
+}
+
+/*--- Tablet -----------------*/
+@media (min-width: 768px) {
+	.mobileSelect-container {
+		width: 60% !important;
+		margin: 0 20%;
+	}
+}
+
+.padding-10 {
+	padding:10px !important;
+}
+
+.badge { 
+	padding: 6px; 
+	font-size: 18px;
+}
+
+.badgePosition { position: absolute; top: 15px; left: 30px;}
+
+
+
+
+
+
+
+/*AGENDA*/
+
+
+/*HEADER-AGENDA*/
+/*Header-palta-admin*/
+
+
+header .dropdown-toggle .fa-user {
+  font-size: 24px !important;
+  margin-top:5px;
+}
+
+.header-palta-admin {
+  background-color:#FFFFFF;
+  z-index:15000;
+}
+
+.header-palta-admin nav.navbar-default {
+  z-index: 10000;
+}
+
+.header-palta-admin a.sidebar-toggle {
+  margin-top: 1.4em; 
+  float: left; 
+  padding-right: 7px;
+}
+
+.header-palta-admin .sidebar-admin {
+  margin-top:-4px; 
+  padding:5px 10px;
+}
+
+.header-palta-admin .sidebar-admin .fa-bars {
+  color:#ddd;
+}
+
+.header-palta-admin .dropdown-mensajes i.fa {
+  color:#FFCC00;
+}
+
+.header-palta-admin .agenda-nombre-usuario {
+  pointer-events: none;
+}
+
+/*MAIN-FOOTER*/
+
+.main-footer {
+    border-top: 0px;
+}
+.main-footer .img-ministerio{
+  float:right !important;
+}
+
+.main-footer .main-footer-titulo p{
+  text-transform: uppercase;
+}
+
+.main-footer .main-footer-contacto p {
+  margin-top: 20px;
+}
+
+
+/*Agenda Landing Jumbotron*/
+
+.agenda-landing-jumbotron .jumbotron_body .container .row {
+  margin-top:100px;
+}
+
+.agenda-landing-jumbotron h1 {
+  margin-bottom:50px;
+}
+
+.agenda-landing-jumbotron span b {
+  font-size: 25px !important;
+}
+
+.panel-footer {
+  border-top: 0px;
+}
+
+/*Tabla-eventos*/
+
+.tabla-eventos table tr .fa {
+  font-size: 25px;
+}
+
+.tabla-eventos .logos-redes .fa {
+  margin: auto 5px !important;
+}
+
+/*Agenda Newsletter*/
+
+.agenda-newsletter {
+  position:relative;
+}
+
+.agenda-newsletter-left {
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+
+.agenda-newsletter-left-2{
+  margin-top:100px;
+}
+
+.agenda-newsletter-right {
+  background-color: #DAF1F8; 
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+}
+
+.chevron-agenda {
+  position:absolute;
+  padding:20px 25px;
+  top:38%;
+  left: 47.5%;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.agenda-newsletter .fa-envelope-o {
+  font-size: 80px;
+  margin-top: 20px;
+}
+
+.agenda-newsletter-right .panel-body  {
+  padding-bottom: 0px !important;
+}
+
+.agenda-newsletter-right .panel-footer {
+  padding-top: 0px !important;
+}
+
+.agenda-newsletter form {
+  margin-bottom: 0px !important;
+}
+
+/*Paneles herramientas*/
+
+.panels-herramientas .panel-heading {
+  color:white;
+}
+
+
+/*Agenda-ubicacion-club*/
+
+.agenda-ubicacion-club .fa {
+  color:#FEC221;
+  font-size:60px;
+  margin-bottom: 20px;
+}
+
+.agenda-ubicacion-club p {
+  font-weight: 500;
+}
+
+.agenda-ubicacion-club i.fa {
+  margin-top: 25px;
+}
+
+/*Panel-evento fullpage*/
+
+.panel-agenda-evento .panel-body .evento-img {
+  height:360px;
+  background-size:cover;
+}
+
+/*Agenda Resultados*/
+
+.agenda-resultados .agenda-resultados-titulo{
+  font-size: 25px; 
+  font-weight: 500;
+}
+
+/*Agenda-datos-perfil*/
+
+.agenda-datos-perfil td {
+  border-bottom: 1px solid #f4f4f4;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(244, 244, 244);
+  border-top: 0px !important;
+}
+
+/*BUSCADOR DE CLUBES - Panel-Club*/
+
+.panel-club .panel-club-titulo{
+  font-size: 25px; 
+  font-weight: 500;
+}
+
+.panel-club i{
+  font-size: 30px; 
+  color:#FEC221;
+}
+
+.panel-club-contenido {
+  margin-top: 15px;
+}
+
+.panel-club .panel-footer {
+  border-top:0px; 
+  padding:10px; 
+  margin:0px;
+}
+
+/*FULLSCREEN SELECT-ESTILOS*/
+
+.btn-mobileSelect-gen {
+  text-transform: none !important;
+  font-weight: 400 !important;
+  overflow: hidden;
+  line-height: 1.7;
+}
+
+
+
+/*CAROUSEL*/
+
+.carousel-inner .active.left { left: -25%; }
+.carousel-inner .next        { left:  25%; }
+.carousel-inner .prev    { left: -25%; }
+.carousel-control        { width:  4%; }
+
+
+.carousel-inner .item .col-xs-3 {
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+.carousel-control .glyphicon-chevron-right, .carousel-control .glyphicon-chevron-left {
+  margin-top:15px !important;
+}
+
+/*BOTONES*/
+
+.btn-contorno {
+  padding: 12px 34px;
+  background-color: white;
+  color: #0695D6;
+  border:1px solid #0695D6;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.btn-contorno .fa {
+  vertical-align: middle;
+}
+
+.btn-contorno:hover {
+  border:2px solid #0695D6 !important;
+  background-color: white !important;
+}
+
+/*FORMS*/
+
+/*gris primera opcion del select*/
+.select-agenda {
+  color: #767676;
+}
+
+.select-agenda>option:not(:first-child) {
+  color: #000;
+}
+.select-agenda>option:first-hand {
+  color: #767676;
+}
+
+/*.btn-mobileSelect-gen {
+  color:#767676;
+}*/
+
+.negro {
+  color:black !important;
+}
+
+/*.gris {
+  color:#767676 !important;
+}*/
+
+/*PRIMERA OPCION DE BOOTSTRAP-FULL-SELECT*/
+
+.mobileSelect-control:first-child {
+  color:#767676;
+  display:none !important;
+}
+
+
+/*AGENDA-MEDIA QUERIES*/
+
+/* Extra Small Devices, Phones */
+  @media only screen and (max-width : 991px){
+.panel-eventos input {
+  margin-bottom:20px !important;
+}
+
+.img-ministerio {
+  float:left !important;
+}
+
+}
