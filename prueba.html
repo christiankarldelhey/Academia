@@ -1,0 +1,800 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Empty</title>
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- STYLE SHEETS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+<link href="css/jquery-ui.css" rel="stylesheet">
+
+<!-- iCheck -->
+<link href="plugins/iCheck/all.css" rel="stylesheet">
+
+<link href="css/schedule.css" rel="stylesheet">
+
+<link href="css/roboto-fontface.css" rel="stylesheet">
+<link href="css/poncho.min.css" rel="stylesheet">
+<link href="css/palta.css" rel="stylesheet">
+
+<link href="css/turnero.css" rel="stylesheet">
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+
+	<header class="header" style="background-color:#FFFFFF; z-index:15000;">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Burger</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+    
+                        <!--
+                        <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button" style="margin-top: 1.4em; float: left; padding-right: 7px;">
+                            <div class="navbar-toggle collapsed pull-right" style="margin-top:-4px; padding:5px 10px;"><i class="fa fa-bars" style="color:#ddd;"></i>
+                            </div>
+                        </a>-->
+                        <a class="navbar-brand" href="#"><img src="img/logoMinisterio.png" height="50" alt=""></a>
+    
+                    </div>
+    
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+    
+                            <!--
+                            <li class="dropdown messages-menu">
+                                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                                <i class="fa fa-bars"></i>
+                                </a>              
+                            </li>
+                            -->
+    
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <span class="hidden-xs">Alexander Pierce</span>
+                                    <i class="fa fa-user navIco"></i>
+                                </a>
+                                <ul class="dropdown-menu" style="width:100%;">
+                                    <li>
+                                        <a href="#" class="">Profile</a>
+                                        <a href="#" class="">Sign out</a>
+                                    </li>
+                                </ul>
+    
+
+                            </li>
+                            <!--
+                            <li>
+                            	<a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                            </li>
+                            -->
+    
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" role="main">
+        <section class="container">
+
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li role="presentation" class="active"><a href="#tablon" aria-controls="profile" role="tab" data-toggle="tab">Tablón</a></li>
+                <li role="presentation" class="dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Mi Cuenta</a>
+                    <div class="dropdown-menu dropdown-menu-tab">
+                        <a href="#micuenta" aria-controls="home" role="tab" class="dropdown-item dropdown-item-tab" data-toggle="tab">Perfil</a>
+                        <!--<div class="dropdown-divider"></div>-->
+                        <a href="#cambiapass" aria-controls="cambiapass" role="tab" class="dropdown-item dropdown-item-tab" data-toggle="tab">Cambiar contraseña</a>
+                        <!--<a class="dropdown-item dropdown-item-tab" href="#">Cambiar contraseña</a>-->
+                    </div>
+                </li>
+                <li role="presentation"><a href="#planificacion" aria-controls="planifica" role="tab" data-toggle="tab">Planificacion</a></li>
+            </ul>
+
+            
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane bg-white active" id="tablon">
+
+                    <div class="col-md-12 tabstylecontent">
+                        <ol class="breadcrumb m-t-0 m-b-2 p-t-1">
+                            <li class="breadcrumb-item"><a href="#">Inicio</a>
+                            </li>
+                            <li class="breadcrumb-item active">Tablón</li>
+                        </ol>
+    
+                        <div class="alert alert-info m-b-2">
+                            <div class="media">
+                                <div class="media-left">
+                                    <i class="fa fa-arrow-circle-o-right fa-fw fa-4x"></i>
+                                </div>
+                                <div class="media-body">
+                                    <h4>¡Importante!</h4>
+                                    <p class="margin-0">Para poder reservar un turno, debes inscribirte como usuario.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3>Solicitud de Turnos</h3>
+                        
+                        <div class=" btn btn-success v-middle bg-success">
+                            <i class="fa fa-calendar" aria-hidden="true"></i> Período: <input type="text" placeholder="__/__/____" class="bg-success" style="border:none; color:white;" id="datepicker" >
+                        </div>
+                        
+                        <div id="reservations" class="m-t-2 m-b-2">
+                            <div style="" class="">
+                                <table class="reservations" border="1" cellpadding="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td class="resdate">Lunes, 04/09/2017</td>
+                                            <td class="reslabel" colspan="2">10:00</td>
+                                            <td class="reslabel" colspan="2">11:00</td>
+                                            <td class="reslabel" colspan="2">12:00</td>
+                                            <td class="reslabel" colspan="2">13:00</td>
+                                            <td class="reslabel" colspan="2">14:00</td>
+                                            <td class="reslabel" colspan="2">15:00</td>
+                                            <td class="reslabel" colspan="2">16:00</td>
+                                            <td class="reslabel" colspan="2">17:00</td>
+                                        </tr>
+                                        <tr class="slots">
+                                            <td class="resourcename">
+                                                <span resourceid="7" class="resourceNameSelector" resource-details-bound="1">Turnos SAS</span>
+                                            </td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" class="reserved clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- flushing -->
+                            <div style="position:relative;">
+                                <table class="reservations" border="1" cellpadding="0" width="100%">
+                                    <tbody>
+                                        <tr class="today">
+                                            <td class="resdate">Martes, 05/09/2017</td>
+                                            <td class="reslabel" colspan="2">10:00</td>
+                                            <td class="reslabel" colspan="2">11:00</td>
+                                            <td class="reslabel" colspan="2">12:00</td>
+                                            <td class="reslabel" colspan="2">13:00</td>
+                                            <td class="reslabel" colspan="2">14:00</td>
+                                            <td class="reslabel" colspan="2">15:00</td>
+                                            <td class="reslabel" colspan="2">16:00</td>
+                                            <td class="reslabel" colspan="2">17:00</td>
+                                        </tr>
+                                        <tr class="slots">
+                                            <td class="resourcename">
+                                                <span resourceid="7" class="resourceNameSelector" resource-details-bound="1">Turnos SAS</span>
+                                            </td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" class="reserved clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- flushing -->
+                            <div style="position:relative;">
+                                <table class="reservations" border="1" cellpadding="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td class="resdate">Miércoles, 06/09/2017</td>
+                                            <td class="reslabel" colspan="2">10:00</td>
+                                            <td class="reslabel" colspan="2">11:00</td>
+                                            <td class="reslabel" colspan="2">12:00</td>
+                                            <td class="reslabel" colspan="2">13:00</td>
+                                            <td class="reslabel" colspan="2">14:00</td>
+                                            <td class="reslabel" colspan="2">15:00</td>
+                                            <td class="reslabel" colspan="2">16:00</td>
+                                            <td class="reslabel" colspan="2">17:00</td>
+                                        </tr>
+                                        <tr class="slots">
+                                            <td class="resourcename">
+                                                <span resourceid="7" class="resourceNameSelector" resource-details-bound="1">Turnos SAS</span>
+                                            </td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" class="reserved clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- flushing -->
+                            <div style="position:relative;">
+                                <table class="reservations" border="1" cellpadding="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td class="resdate">Jueves, 07/09/2017</td>
+                                            <td class="reslabel" colspan="2">10:00</td>
+                                            <td class="reslabel" colspan="2">11:00</td>
+                                            <td class="reslabel" colspan="2">12:00</td>
+                                            <td class="reslabel" colspan="2">13:00</td>
+                                            <td class="reslabel" colspan="2">14:00</td>
+                                            <td class="reslabel" colspan="2">15:00</td>
+                                            <td class="reslabel" colspan="2">16:00</td>
+                                            <td class="reslabel" colspan="2">17:00</td>
+                                        </tr>
+                                        <tr class="slots">
+                                            <td class="resourcename">
+                                                <span resourceid="7" class="resourceNameSelector" resource-details-bound="1">Turnos SAS</span>
+                                            </td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" class="reserved clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- flushing -->
+                            <div style="position:relative;">
+                                <table class="reservations" border="1" cellpadding="0" width="100%">
+                                    <tbody>
+                                        <tr>
+                                            <td class="resdate">Viernes, 08/09/2017</td>
+                                            <td class="reslabel" colspan="2">10:00</td>
+                                            <td class="reslabel" colspan="2">11:00</td>
+                                            <td class="reslabel" colspan="2">12:00</td>
+                                            <td class="reslabel" colspan="2">13:00</td>
+                                            <td class="reslabel" colspan="2">14:00</td>
+                                            <td class="reslabel" colspan="2">15:00</td>
+                                            <td class="reslabel" colspan="2">16:00</td>
+                                            <td class="reslabel" colspan="2">17:00</td>
+                                        </tr>
+                                        <tr class="slots">
+                                            <td class="resourcename">
+                                                <span resourceid="7" class="resourceNameSelector" resource-details-bound="1">Turnos SAS</span>
+                                            </td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" class="reserved   clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" class="reserved clickres slot" resid="" id="" data-hasqtip=""></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                            <td colspan="1" ref="" class="pasttime slot"></td>
+                                        </tr>
+                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- flushing -->
+                        </div>                    
+
+                        <!--
+                        <div class="m-t-2 m-b-2" align="center">
+                            <ul class="list-inline">
+                                <li class="btn btn-contorno bg-white btn-sm text-info">Disponible</li>
+                                <li class="btn btn-danger btn-sm">No Disponible</li>
+                                <li class="btn btn-primary btn-sm">Reservado</li>
+                                <li class="btn btn-success btn-sm">Mi Reserva</li>
+                                <li class="btn btn-default btn-sm">Pasado</li>
+                                <li class="btn btn-warning btn-sm">Restringido</li>
+                            </ul>
+                        </div>
+                        -->
+                        
+                        <div class="p-y-2 text-center m-b-3">
+                            <p class="aligner col-xs-12">
+                            	<small>
+                                    <span class="label bg-white m-t-1" style="border: 1px solid #666666;">&nbsp;</span> &nbsp;Disponible&nbsp;&nbsp;
+                                    <span class="label bg-danger m-t-1">&nbsp;</span> &nbsp;No Disponible&nbsp;&nbsp;
+                                    <span class="label bg-primary m-t-1">&nbsp;</span> &nbsp;Reservado&nbsp;&nbsp;
+                                    <span class="label bg-success m-t-1">&nbsp;</span> &nbsp;Mi Reserva&nbsp;&nbsp;
+                                    <span class="label bg-default m-t-1">&nbsp;</span> &nbsp;Pasado&nbsp;&nbsp;
+                                    <span class="label bg-warning m-t-1">&nbsp;</span> &nbsp;Restringido&nbsp;&nbsp;
+                                </small>
+                            </p>
+                        </div>               
+                        
+                        
+					</div>                        
+                    
+                </div>
+
+                
+                <div role="tabpanel" class="tab-pane" id="micuenta">
+                    <div class="col-md-12 tabstylecontent">
+                        <ol class="breadcrumb m-t-0 m-b-2 p-t-1">
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="#">Mi Cuenta</a></li>
+                            <li class="breadcrumb-item active">Perfil</li>
+                        </ol>
+                        
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading bg-primary text-white text-left">
+                                    <h4>Perfil</h4>
+                                </div>
+                            
+                                <div class="panel-body text-left">
+                                    <form class="form-azul">
+                                
+                                        <div class="col-md-12">
+                                            <h3 class="text-cielo m-b-2">Iniciar sesión</h3>
+                                            <div class="form-group">
+                                                <label class="control-label">DNI</label>
+                                                <input type="text" class="form-control" data-inputmask="" data-mask="" value="23428975" disabled>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12" id="">
+                                            <div class="form-group">
+                                                <label class="control-label">Página de inicio predeterminada *</label>
+                                                <select class="form-control" >
+                                                    <option value="">Tablon</option>
+                                                    <option value="">Mi Calendario</option>
+                                                    <option value="">Planificacion</option>
+                                                    <option value="">Calendario de Recursos</option>
+                                                </select>
+                                            </div>
+                                        </div>    
+                                        
+                     
+                                        <div class="col-md-12">
+                                            <h3 class="text-cielo m-b-2">Usuario</h3>
+                                            <div class="form-group">
+                                                <label class="control-label">Nombre *</label>
+                                                <input type="text" class="form-control" data-inputmask="" data-mask="" value="Jose">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Apellido *</label>
+                                                <input type="text" class="form-control" data-inputmask="" data-mask="" value="Perez">
+                                            </div>
+                                        </div>                        
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Nombre del Usuario *</label>
+                                                <input type="text" class="form-control" data-inputmask="" data-mask="" value="usuarionombre">
+                                            </div>
+                                        </div>                        
+                                        <div class="col-md-12" id="otros">
+                                            <div class="form-group">
+                                                <label class="control-label">Correo *</label>
+                                                <input id="" class="form-control" type="email" value="esteeselmail@mail.com">
+                                            </div>
+                                        </div>    
+                                        
+                                        <div class="col-md-12">
+                                            <h3 class="text-cielo m-b-2">Información adicional (opcional)</h3>
+                                            <div class="form-group">
+                                                <label class="control-label">Organización</label>
+                                                <input type="text" class="form-control" data-inputmask="" data-mask="" value="Pep Inc.">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Teléfono</label>
+                                                <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999)-99999999&quot;" data-mask="" value="24442565345">
+                                            </div>
+                                            <p class="m-t-1"><small>* Campo requerido</small></p>
+                                        </div>
+                                        
+                                        <div class="text-center col-md-12 m-t-1 m-b-2" align="center">
+                                            <button type="button" class="btn btn-success">Actualizar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>                        
+                        </div>
+                        
+					</div>          
+                </div>
+                
+                <div role="tabpanel" class="tab-pane" id="cambiapass">
+                    <div class="col-md-12 tabstylecontent">
+                        <ol class="breadcrumb m-t-0 m-b-2 p-t-1">
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item"><a href="#">Mi Cuenta</a></li>
+                            <li class="breadcrumb-item active">Cambiar contraseña</li>
+                        </ol>
+
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading bg-primary text-white text-left">
+                                    <h4>Cambiar contraseña</h4>
+                                </div>
+                            
+                                <div class="panel-body text-left">
+                                    <form class="form-azul">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Contraseña actual</label>
+                                                <input type="password" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Nueva contraseña</label>
+                                                <input type="password" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Repetir contraseña</label>
+                                                <input type="password" class="form-control">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="text-center col-md-12 m-t-1 m-b-2" align="center">
+                                            <button type="button" class="btn btn-success">Cambiar contraseña</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>                        
+                        </div>
+                        
+					</div>          
+                    
+                </div> 
+                
+                <div role="tabpanel" class="tab-pane" id="planificacion">
+                    <div class="col-md-12 tabstylecontent">
+                        <ol class="breadcrumb m-t-0 m-b-2 p-t-1">
+                            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                            <li class="breadcrumb-item active">Planificación</li>
+                        </ol>
+                        
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading bg-primary text-white text-left">
+                                    <h4>Crear nueva reserva</h4>
+                                    <h4 class="hidden">Editar reserva</h4>
+                                </div>
+                            
+                                <div class="panel-body text-left">
+                                    <form class="form-azul">
+                                        <div class="col-md-12">
+                                        	<h3>Francisco Barrientos</h3>
+                                            <p>
+                                            	<span><b>Correo: </b>franciscobarr@gmail.com</span><br />
+                                                <span><b>Teléfono: </b>2345 63465323</span>
+                                            </p>
+                                            <h4 class="m-t-1">Recursos a Reservar</h4>
+                                            <h3 class="m-t-2">Turnos SAS</h3>
+                                        </div>
+
+                                        <div class="col-md-4 col-xs-7">
+                                            <div class="form-group">
+                                                <label class="control-label">Inicio</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
+                                                    <div class="input-group-addon bg-primary p-l-2 p-r-2">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-xs-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Horario</label>
+                                                <div class="input-group">
+                                                    <select id="BeginPeriod" name="beginPeriod" class="form-control">
+                                                        <option value="10:00:00">10:00</option>
+                                                        <option value="10:30:00">10:30</option>
+                                                        <option value="11:00:00">11:00</option>
+                                                        <option value="11:30:00">11:30</option>
+                                                        <option value="12:00:00">12:00</option>
+                                                        <option value="12:30:00">12:30</option>
+                                                        <option value="13:00:00">13:00</option>
+                                                        <option value="13:30:00">13:30</option>
+                                                        <option value="14:00:00">14:00</option>
+                                                        <option value="14:30:00">14:30</option>
+                                                        <option value="15:00:00">15:00</option>
+                                                        <option value="15:30:00">15:30</option>
+                                                        <option value="16:00:00">16:00</option>
+                                                        <option value="16:30:00">16:30</option>
+                                                        <option value="17:00:00">17:00</option>
+                                                        <option value="17:30:00">17:30</option>
+                                                    </select>
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        
+                                        <div class="col-md-4 col-xs-7">
+                                            <div class="form-group">
+                                                <label class="control-label">Fin</label>
+                                                <div class="input-group">
+                                                    <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
+                                                    <div class="input-group-addon bg-primary p-l-2 p-r-2">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-xs-4">
+                                            <div class="form-group">
+                                                <label class="control-label">Horario</label>
+                                                <div class="input-group">
+                                                    <select id="EbdPeriod" name="endPeriod" class="form-control">
+                                                        <option value="10:00:00">10:00</option>
+                                                        <option value="10:30:00">10:30</option>
+                                                        <option value="11:00:00">11:00</option>
+                                                        <option value="11:30:00">11:30</option>
+                                                        <option value="12:00:00">12:00</option>
+                                                        <option value="12:30:00">12:30</option>
+                                                        <option value="13:00:00">13:00</option>
+                                                        <option value="13:30:00">13:30</option>
+                                                        <option value="14:00:00">14:00</option>
+                                                        <option value="14:30:00">14:30</option>
+                                                        <option value="15:00:00">15:00</option>
+                                                        <option value="15:30:00">15:30</option>
+                                                        <option value="16:00:00">16:00</option>
+                                                        <option value="16:30:00">16:30</option>
+                                                        <option value="17:00:00">17:00</option>
+                                                        <option value="17:30:00">17:30</option>
+                                                    </select>
+
+                                                </div>
+                                                <!-- /.input group -->
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>                                        
+                                        
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Comentarios</label>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-12">
+                                            <label class="control-label m-b-1">Enviar recordatorio</label>
+                                            <div class="reservationReminders">
+                                                <div id="reminderOptionsStart">
+                                                    
+                                                    <input type="checkbox" class="reminderEnabled minimal p-r-1" name="START_REMINDER_ENABLED">
+                                                    <input type="text" size="3" maxlength="2" value="15" class="reminderTime textbox m-l-1" name="START_REMINDER_TIME" data-inputmask="99" data-inputmask="mask: 99"> 
+                                                    <select class="reminderInterval textbox" name="START_REMINDER_INTERVAL" style="padding: 2px;">
+                                                        <option value="minutes">minutos</option>
+                                                        <option value="hours">horas</option>
+                                                        <option value="days">días</option>
+                                                    </select>
+                                                    <span class="reminderLabel"><small>Antes del inicio</small></span>
+                                                </div>
+                                                <br />
+                                                <div id="reminderOptionsEnd">
+                                                    <input type="checkbox" class="reminderEnabled minimal p-r-1" name="END_REMINDER_ENABLED">
+                                                    <input type="text" size="3" maxlength="2" value="15" class="reminderTime textbox m-l-1" name="END_REMINDER_TIME" data-inputmask="99" data-mask="">
+                                                    <select class="reminderInterval textbox" name="END_REMINDER_INTERVAL" style="padding: 2px;">
+                                                        <option value="minutes">minutos</option>
+                                                        <option value="hours">horas</option>
+                                                        <option value="days">días</option>
+                                                    </select>
+                                                    <span class="reminderLabel"><small>Antes de la finalización</small></span>
+                                                </div>
+                                                <div class="clear">&nbsp;</div>
+                                            </div>                                        
+                                        </div>
+                                        
+                                        
+                            
+                                        
+                                        
+                                        <!-- Para Editar -->
+                                        <div class="col-md-12 hidden" align="center">
+                                        	<button type="button" class="btn btn-primary">Imprimir</button>
+                                            <button type="button" class="btn btn-primary">Descargar</button>
+                                            <button type="button" class="btn btn-primary">Añadir a Outlook</button>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <hr>
+                                        <div class="col-md-12 m-t-1 hidden" align="center">
+                                        	<button type="button" class="btn btn-success">Actualizar</button>
+                                            <button type="button" class="btn btn-default">Borrar</button>
+                                        </div>   
+                                        
+                                        <!-- Para crear nueva!!! -->
+                                        <div class="col-md-12 m-b-1" align="center">
+                                        	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#guardarExito">Crear</button>
+                                            <button type="reset" class="btn btn-default">Cancelar</button>
+                                        </div>                                                            
+                                    </form>
+                                </div>
+                            </div>                        
+                        </div>
+                                                
+					</div>  
+                </div>                                
+            </div>
+         
+            
+        </section>
+
+    
+    
+    </main>
+
+
+  <footer class="main-footer bg-primary">
+    <div class="container">
+      <div class="col-sm-12">
+        <img class="image-responsive" src="./img/logoFooter.png" alt="Ministerio de Producción">
+      </div>
+    </div>
+    <div class="container aligner">
+      <div class="col-sm-6">
+        <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a></p>
+      </div>
+      <div class="col-sm-6 text-right">
+        <p class="text-muted small">2016 | Ministerio de Producción | Hipólito Yrigoyen 250 | (C1086AAB)<br/>CABA | Tel. 0800.333.7963</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="guardarExito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <!--
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      -->
+      <div class="modal-body text-center">
+        <i class="fa fa-check-square-o fa-4x m-t-2 text-cielo" aria-hidden="true"></i>
+        <h4>¡Tu reserva ha sido realizada con éxito!</h4>
+        <p>
+        	Tu número de referencia es <span>45623957232563475</span><br />
+            <span>19/09/2017</span><br />
+            <span>Recursos: TURNOS SAS</span>
+        </p>
+        <p>Te hemos enviado un mail con la reserva asignada.<br />
+        Si no llegó a tu Bandeja de Entrada, controlá en correo no deseado o span.</p>
+      </div>
+      <div class="modal-footer">
+      	<div align="center">
+        	<button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+<!-- Datepicker -->
+<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+<script type="application/javascript">
+	$('input.dateinput').datepicker({
+		language: "es",
+		autoclose: true,
+		clearBtn: true,
+		orientation: "top"
+	});
+</script>   
+
+<script src="js/jquery-ui.min.js"></script>
+<script>
+$( function() {
+	$("#datepicker").datepicker({
+		numberOfMonths: 3,
+		showButtonPanel: true,
+		dayNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
+		dayNamesShort: ['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'],
+		dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'],
+		dateFormat: 'dd/mm/yy',
+		firstDay: 1,
+		monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Deciembre'],
+		monthNamesShort: ['Ene','Feb','Mar','Abr','May','Jun','Jul','Ago','Sep','Oct','Nov','Dic'],
+		currentText: "Hoy",
+		timeFormat: "h:mm tt",
+		altFieldTimeOnly: false,
+		controlType: 'select'
+	});
+} );
+</script>
+
+<!-- iCheck -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<script>
+	//iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+      checkboxClass: 'icheckbox_minimal-blue',
+      radioClass: 'iradio_minimal-blue'
+    });
+</script> 
+
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script>
+    //Datemask dd/mm/yyyy
+    $("[data-mask]").inputmask();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dropdown-menu-tab { 
+	width: 240px;
+}
+.dropdown-item-tab { 
+	display: block; 
+	padding: 12px;
+}
+
+.tabstylecontent { 
+	background: #ffffff; 
+	border: 1px solid #dddddd; 
+	border-top: none;
+}
+
+.panel.panel-default .panel-heading {
+	min-height:54px;
+}
