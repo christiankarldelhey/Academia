@@ -138,10 +138,10 @@ Usar bg-warning*/
 	font-weight: bold;
 }
 
-.academia-filtros .nav-pills>a>li {
+.academia-filtros .nav-pills>a>li, .academia-filtros .nav-pills>a>li>span {
 	padding-top:3px;
 	padding-bottom:3px;
-	padding-left:10px;
+	padding-left:0px;
 	font-weight:400;
 }
 
