@@ -49,6 +49,8 @@
     <link rel="stylesheet" href="css/poncho.min.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="css/palta.css">
+    
+    <link rel="stylesheet" href="css/academia.css">
   
 </head>
 <body>
@@ -135,8 +137,7 @@
                                 <form>
                                     <div class="col-md-4 col-xs-12 m-b-1 center-block text-center">
                                         <span><i class="fa fa-map-marker fa-3x p-r-2" aria-hidden="true"></i>
-                      <b style="">¿Dónde estás?</b></span>
-                                    </div>
+                      <b style="">¿Dónde estás?</b></span>                                    </div>
     
     
                                     <div class="col-md-3 col-xs-12 form-group m-b-0">
@@ -149,17 +150,14 @@
                                         <button class="btn bg-gclaro text-primary btn-block">BUSCAR</button>
                                     </div>
                                 </form>
-    
                             </div>
                             <!-- row -->
-    
                         </div>
                         <!-- panel -->
-    
                     </div>
                 </div>
             </div>
-            <div class="next-section white text-center">
+      <div class="next-section white text-center">
                 <a class="" href="#section-1"><i class="fa-arrow-down fa"></i></a>
             </div>
         </section>
@@ -244,149 +242,99 @@
     
         <section class="container-fluid bg-gclaro tabla-eventos">
             <div class="container">
-                <h3 class="text-center m-b-2">Encontrá los eventos más relevantes de tu ubicación</h3>
-                <div class="col-xs-12">
-                    <form>
-                        <div class="col-md-3 form-group">
-                            <input class="form-control" type="" name="" placeholder="Buenos Aires">
-                        </div>
-                        <div class="form-group col-md-3">
-                            <div class="input-group">
-                                <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
-                                <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="form-group col-md-3">
-                            <div class="input-group">
-                                <input type="text" id="dateinput" name="dateinput" class="form-control pull-right dateinput" placeholder="Hasta..." data-inputmask="&quot;mask&quot;: &quot;99/99/9999&quot;" data-mask="">
-                                <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                    <i class="fa fa-calendar"></i>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="form-group col-md-3">
-                            <select required class="form-control select-agenda" id="">
-                                <option value="" selected disabled>Temática..</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                            </select>
-                        </div>
-                    </form>
-                </div>
-                <!-- row -->
+                <h2 class="text-center">Charlas</h2>
+                <h4 class="text-center m-b-2">Encontrá los eventos más relevantes de tu ubicación</h4>
     
                 <div class="row">
-                    <div class="col-sm-12 table-responsive">
-                        <table class="table dataTable no-footer" id="tablaCupones" role="grid" aria-describedby="tablaCupones_info">
+                    <div class="col-sm-12 table-responsive" style="border:none;">
+                        <table class="table" id="">
                             <thead>
                                 <tr role="row">
-                                    <th class="sorting_asc" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Nro. de Voucher: activate to sort column descending" style="width: 160px;">Fecha y hora</th>
-                                    <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Detalle: activate to sort column ascending" style="width: 300px;">Evento</th>
-                                    <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Proforma: activate to sort column ascending" style="width: 435px;">Dirección</th>
-                                    <th class="sorting" tabindex="0" aria-controls="tablaCupones" rowspan="1" colspan="1" aria-label="Número de Factura: activate to sort column ascending" style="width: 200px;"></th>
+                                    <th class="" style="width: 200px;">Tema</th>
+                                    <th class="" style="width: 200px;">Charla</th>
+                                    <th class="" style="width: 300px;">Formador</th>
+                                    <th class="" style="width: 250px;">Hora</th>
+                                    <th class="" style="width: 200px;"></th>                                    
                                 </tr>
                             </thead>
     
-                            <tbody class="list">
-    
-    
-                                <tr role="row" class="odd">
-                                    <th scope="row" class="sorting_1">
+                            <tbody>
+                                <tr>
+                                    <td>
                                         <p class="text-info"><b>21 de Mayo <br> 16:30 hs </b>
                                         </p>
-                                    </th>
-                                    <td class="">
-                                        <p class="m-r-2">Expoagro</p>
                                     </td>
                                     <td class="">
-                                        <p>Pabellón Amarillo, La Rural
-                                            <br> <small>Av Santa Fe 1234, CABA</small>
-                                        </p>
+                                        <p class="m-r-2">Formación de Precios de Exportación</p>
+                                    </td>
+                                    <td class="">
+                                        	<div class="col-xs-2"><img src="img/img_profile.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:48px;"></div>
+                                        	<div class="col-xs-10"><h6 class="m-l-2">Alexander Pierce</h6></div>
                                     </td>
                                     <td class="logos-redes">
-                                        <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                                        <p>Lunes 28 de Agosto | 10:00hs.</p>
+                                    </td>
+                                    <td>
+                                    	<button class="btn btn-primary btn-sm width100">Ver ahora</button>
                                     </td>
                                 </tr>
-    
-    
-                                <tr role="row" class="odd">
-                                    <th scope="row" class="sorting_1">
-                                        <p class="text-info"><b>23 de Mayo <br> 18:00 hs </b>
+                                <tr>
+                                    <td>
+                                        <p class="text-info"><b>21 de Mayo <br> 16:30 hs </b>
                                         </p>
-                                    </th>
-                                    <td class="">
-                                        <p class="m-r-2">Fuck Up Night - Corrientes</p>
                                     </td>
                                     <td class="">
-                                        <p>Centro Cultural Abasto
-                                            <br> <small>Av Corrientes 3452, CABA</small>
-                                        </p>
+                                        <p class="m-r-2">Formación de Precios de Exportación</p>
+                                    </td>
+                                    <td class="">
+                                        	<div class="col-xs-2"><img src="img/img_profile.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:48px;"></div>
+                                        	<div class="col-xs-10"><h6 class="m-l-2">Alexander Pierce</h6></div>
                                     </td>
                                     <td class="logos-redes">
-                                        <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
+                                        <p>Lunes 28 de Agosto | 10:00hs.</p>
                                     </td>
-                                </tr>
-    
-                                <tr role="row" class="odd">
-                                    <th scope="row" class="sorting_1">
-                                        <p class="text-info"><b>23 de Mayo <br> 19:30 hs </b>
-                                        </p>
-                                    </th>
-                                    <td class="">
-                                        <p class="m-r-2">Aula Virtual Segundo encuentro mensual de estudiantes de la Provincia de Buenos Aires</p>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm width100">Agenda</button>
                                     </td>
-                                    <td class="">
-                                        <p>Centro Cultural Recoleta
-                                            <br> <small>Junín 1930, CABA</small>
-                                        </p>
-                                    </td>
-                                    <td class="logos-redes">
-                                        <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
-                                    </td>
-                                </tr>
-    
-    
-                                <tr role="row" class="odd">
-                                    <th scope="row" class="sorting_1">
-                                        <p class="text-info"><b>3 de Septiembre <br> 13:30 hs </b>
-                                        </p>
-                                    </th>
-                                    <td class="">
-                                        <p class="m-r-2">Taller de Modelo de negocios</p>
-                                    </td>
-                                    <td class="">
-                                        <p>Centro cultural Pasaje Dardo Rocha
-                                            <br> <small>Calle 50 entre 6 y 7, La Plata</small>
-                                        </p>
-                                    </td>
-                                    <td class="logos-redes">
-                                        <i class="fa fa-envelope-o fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-calendar fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-facebook fa-2x text-muted" aria-hidden="true"></i>
-                                        <i class="fa fa-twitter fa-2x text-muted" aria-hidden="true"></i>
-                                    </td>
-                                </tr>
-    
-    
-    
+                                </tr>    
                             </tbody>
     
     
                         </table>
+                    </div>
+
+                    <div id="" align="center">
+                        <ul class="pagination">
+                            <li class="paginate_button previous disabled" id=""><a href="#" aria-controls="" data-dt-idx="0" tabindex="0">&lt;</a>
+                            </li>
+                            <li class="paginate_button active"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">1</a>
+                            </li>
+                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">2</a>
+                            </li>
+                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">3</a>
+                            </li>
+                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">4</a>
+                            </li>
+                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">5</a>
+                            </li>
+                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">6</a>
+                            </li>
+                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">7</a>
+                            </li>
+                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">8</a>
+                            </li>
+                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">9</a>
+                            </li>
+                            <li class="paginate_button" id=""><a href="#" aria-controls="" data-dt-idx="2" tabindex="0">&gt;</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="clearfix"></div>
+
+                    
+                    <div align="center">
+                    	<a class="btn btn-primary text-center">Ver todas las charlas</a>
                     </div>
                 </div>
     
@@ -396,32 +344,6 @@
     
                     </div>
                     <div class="col-sm-8 aligner col-sm-offset-2">
-                        <div class="" id="">
-                            <ul class="center-block pagination">
-                                <li class="paginate_button previous disabled" id=""><a href="#" aria-controls="" data-dt-idx="0" tabindex="0">&lt;</a>
-                                </li>
-                                <li class="paginate_button active"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">1</a>
-                                </li>
-                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">2</a>
-                                </li>
-                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">3</a>
-                                </li>
-                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">4</a>
-                                </li>
-                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">5</a>
-                                </li>
-                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">6</a>
-                                </li>
-                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">7</a>
-                                </li>
-                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">8</a>
-                                </li>
-                                <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">9</a>
-                                </li>
-                                <li class="paginate_button" id=""><a href="#" aria-controls="" data-dt-idx="2" tabindex="0">&gt;</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
     
