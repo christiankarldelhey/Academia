@@ -29,10 +29,16 @@
 .bg-manzana  {
 	background-color: #C8D171 !important;
 }
+.text-manzana  {
+	color: #C8D171 !important;
+}
 
 /*Comercio exterior*/
 .bg-lila  {
 	background-color: #A294B9 !important;
+}
+.text-lila  {
+	color: #A294B9 !important;
 }
 
 /*Medio Ambiente - 
@@ -46,6 +52,9 @@ Usar bg-info*/
 .bg-verde  {
 	background-color: #37895b !important;
 }
+.text-verde  {
+	color: #37895b !important;
+}
 
 /*Comercializacion -
 Usar bg-danger*/
@@ -57,21 +66,35 @@ Usar bg-primary*/
 .bg-violeta-2 {
 	background-color: #79528D !important;
 }
+.text-violeta-2 {
+	color: #79528D !important;
+}
 
 /*Produccion*/
 .bg-borgoña {
 	background-color: #89325E !important;
 }
+.text-borgoña {
+	color: #89325E !important;
+}
+
 
 /*Tecnologia*/
 .bg-naranja {
 	background-color: #f57539 !important;
+}
+.text-naranja {
+	color: #f57539 !important;
 }
 
 /*Marco regulatorio*/
 .bg-celeste {
 	background-color: #79c7ec !important;
 }
+.text-celeste {
+	color: #79c7ec !important;
+}
+
 
 /*Emprender - 
 Usar bg-warning*/
@@ -115,7 +138,7 @@ Usar bg-warning*/
 	font-weight: bold;
 }
 
-.academia-filtros .nav-pills>li>a {
+.academia-filtros .nav-pills>a>li {
 	padding-top:3px;
 	padding-bottom:3px;
 	padding-left:10px;
@@ -127,3 +150,10 @@ Usar bg-warning*/
 	margin-bottom: 2px;
 	margin-right:5px;
 }
+
+.nav>a>li:focus, .nav>a>li:hover {
+    text-decoration: none;
+    background-color: #eee;
+}
+
+
