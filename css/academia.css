@@ -22,17 +22,108 @@
 /*CHRISTIAN*/
 
 
-/*Paleta de colores academia*/
+/*PALETA DE COLORES DE ACADEMIA*/
 
-.bg-rojo {
-	background-color: #D04A49 !important;
+
+/*Financiamiento*/
+.bg-manzana  {
+	background-color: #C8D171 !important;
 }
 
+/*Comercio exterior*/
+.bg-lila  {
+	background-color: #A294B9 !important;
+}
+
+/*Medio Ambiente - 
+Usar bg-success*/
+
+
+/*Calidad - 
+Usar bg-info*/
+
+/*Seguridad*/
+.bg-verde  {
+	background-color: #37895b !important;
+}
+
+/*Comercializacion -
+Usar bg-danger*/
+
+/*Recursos Humanos - 
+Usar bg-primary*/
+
+/*Administracion*/
 .bg-violeta-2 {
 	background-color: #79528D !important;
 }
 
+/*Produccion*/
 .bg-borgoña {
 	background-color: #89325E !important;
 }
 
+/*Tecnologia*/
+.bg-naranja {
+	background-color: #f57539 !important;
+}
+
+/*Marco regulatorio*/
+.bg-celeste {
+	background-color: #79c7ec !important;
+}
+
+/*Emprender - 
+Usar bg-warning*/
+
+
+
+
+
+
+
+
+
+
+
+.text-gris {
+	color: #808080 !important;
+}
+
+
+.academia-filtros {
+	font-size: 18px !important;
+}
+
+.academia-filtros span {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 10px;
+	font-weight:400;
+}
+
+.academia-filtros li {
+	margin-top:0px !important;
+}
+
+.academia-filtros input {
+	margin-right: 40px;
+}
+
+.academia-filtros h3 {
+	color:#808080;
+	font-weight: bold;
+}
+
+.academia-filtros .nav-pills>li>a {
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:10px;
+	font-weight:400;
+}
+
+.academia-filtros .fa-circle {
+	font-size: 12px;
+	margin-bottom: 2px;
+	margin-right:5px;
+}
