@@ -157,3 +157,23 @@ Usar bg-warning*/
 }
 
 
+
+
+
+
+.padding-10 {
+	padding:10px !important;
+}
+
+.badge { 
+	padding: 4px;
+	font-size: 14px;
+}
+
+.badgePosition {     
+	position: relative;
+	top: -19px;
+	left: -25px;
+}
+
+.width100 { width:100% !important;}

@@ -50,6 +50,7 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="css/palta.css">
     
+    <link rel="stylesheet" href="css/AdminLTE.css">    
     <link rel="stylesheet" href="css/academia.css">
   
 </head>
@@ -74,44 +75,36 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CLUBES <span class="caret"></span></a>
+                        	<li class=""><a href="" class="nohover" style="font-weight: bold;">ACADEMIA PYME</a></li>                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CAPACITACIONES <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="http://www.produccion.gob.ar/institucional/mision/">MISIÓN</a>
+                                    <li><a href="">MISIÓN</a>
                                     </li>
-                                    <li><a href="http://www.produccion.gob.ar/institucional/el-ministro/">EL MINISTRO</a>
+                                    <li><a href="">EL MINISTRO</a>
                                     </li>
-                                    <li><a href="http://www.produccion.gob.ar/institucional/organigrama/">ORGANIGRAMA</a>
+                                    <li><a href="">ORGANIGRAMA</a>
                                     </li>
-                                    <li><a href="http://www.produccion.gob.ar/institucional/secretarias/secretaria-de-industria-2/">SECRETARIAS</a>
-                                    </li>
-                                    <li><a href="http://www.produccion.gob.ar/institucional/subsecretarias/secretaria-de-industria/">SUBSECRETARIAS</a>
-                                    </li>
-                                    <li><a href="http://www.produccion.gob.ar/casasdelaproduccion/">CASAS DE LA PRODUCCIÓN</a>
+                                    <li><a href="">SECRETARIAS</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">NOTICIAS <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="http://www.produccion.gob.ar/guia-de-tramites/">TODOS</a>
-                                    </li>
-                                    <li><a href="http://www.produccion.gob.ar/tramites-de-pymes/">PYME</a>
-                                    </li>
-                                    <li><a href="http://www.produccion.gob.ar/tramites-de-emprendedores/">EMPRENDEDOR</a>
-                                    </li>
-                                    <li><a href="http://www.produccion.gob.ar/tramites-de-consumidor/">CONSUMIDOR</a>
-                                    </li>
-                                    <li><a href="http://www.produccion.gob.ar/tramites-comercio/">COMERCIO</a>
-                                    </li>
-                                    <li><a href="http://www.produccion.gob.ar/tramites-de-industria/">INDUSTRIA</a>
-                                    </li>
-                                    <li><a href="http://www.produccion.gob.ar/instituciones-productivas/">INSTITUCIONES</a>
+                            <li><a href="">FORO</a></li>
+                            
+                            <!-- Not logged-->
+                            <a href="#myModal" class="btn btn-success" data-toggle="modal" style="display:none;">INGRESÁ</a>                          
+                            <!-- Logged -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-user navIco"></i>
+                                     <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="width:100%;">
+                                    <li>
+                                        <a href="#" class="">Profile</a>
+                                        <a href="#" class="">Sign out</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li><a href="http://www.produccion.gob.ar/sala-de-prensa/comunicados/">MINISTERIO</a>
-                            </li>
+                            </li>                            
                         </ul>
                     </div>
                     <!-- /.navbar-collapse -->
@@ -126,12 +119,21 @@
         <section id="section-0" class="jumbotron intro fixed full-height agenda-landing-jumbotron" style="background-image: url('dist-palta/img/Landing_Jumbotron_AgendaEmprendedora1920x1080.jpg');">
             <div class="jumbotron_body text-center">
                 <div class="container">
-                    <div class="row" style="">
+                    <!-- NOT LOGGED -->
+                    <div class="row">
                         <div class="animated-fade-in col-xs-12 col-md-8 col-md-offset-2 text-center">
                             <h1 style="">Academia PyME</h1>
-                            <p>Enterate de los eventos y capacitaciones que tenemos programados para vos</p>
+                            <p>Cursos, charlas y herramientas gratuitas para que te capacites en administración, tecnología, comercio exterior y mucho más.</p>
                         </div>
                     </div>
+                    
+                    <!-- lOGGED -->
+                    <div class="row hidden">
+                        <div class="animated-fade-in col-xs-12 col-md-8 col-md-offset-2 text-center">
+                            <h1 style="">Hola Julia Robertini!</h1>
+                            <p>Seguí capacitándote en Academia PyME. Hay más cursos, charlas y herramientas gratuitas para que te capacites en administración, tecnología, comercio exterior y mucho más.</p>
+                        </div>
+                    </div>                    
                 </div>
             </div>
 
@@ -147,7 +149,7 @@
 
         <section class="bg-gclaro text-center">
             <h3 class="">Cursos</h3>
-            <p>Eleji el curso que más te interesó...</p>
+            <p>Elegí el curso que más te interese y aprendé con videos, infografías y material descargable. Podés pausarlo y retomarlo cuando quieras.</p>
             <div class="container m-t-3">
                 <div class="row panels-row">
     
@@ -157,8 +159,8 @@
     
                             </div>
                             <div class="panel-body text-left">
-                                <h5>Titulito</h5>
-                                <h3>Surge una nueva ola emprendedora</h3>
+                                <h5>Comercialización</h5>
+                                <h3>Cómo vender en Internet</h3>
                                 <p class="text-muted">Accedé a préstamos a tasa 0 de hasta $ 150.000 y asesoramiento.</p>
                             </div>
                         </a>
@@ -170,8 +172,8 @@
     
                             </div>
                             <div class="panel-body text-left">
-                                <h5>Titulito</h5>
-                                <h3>Emprendedores cuentan su historia.</h3>
+                                <h5>Administración</h5>
+                                <h3>Herramientas de Administración financiera.</h3>
                                 <p class="text-muted"> Financiaron su emprendimiento
                                 </p>
                             </div>
@@ -184,8 +186,8 @@
     
                             </div>
                             <div class="panel-body text-left">
-                            	<h5>Titulito</h5>
-                                <h3>Relato de emprendedores</h3>
+                            	<h5>Producción</h5>
+                                <h3>Inventario: la clave de tu productividad.</h3>
                                 <p class="text-muted">Accedé a préstamos y asesoramiento.
                                 </p>
                             </div>
@@ -198,8 +200,8 @@
     
                             </div>
                             <div class="panel-body text-left">
-                            	<h5>Titulito</h5>
-                                <h3>Martín nos cuenta su emprendimiento</h3>
+                            	<h5>Tecnología</h5>
+                                <h3>Redes sociales: el trampolín de tu PyME</h3>
                                 <p class="text-muted">Préstamos bancarios para todas las regiones</p>
                             </div>
                         </a>
@@ -210,67 +212,56 @@
         </section>
 
 
-    
-        <section class="container-fluid tabla-eventos bg-white">
+        <section class="container-fluid tabla-eventos bg-gclaro">
             <div class="container">
-                <h2 class="text-center">Charlas</h2>
+                <h2 class="text-center">Mi actividad</h2>
                 <h4 class="text-center m-b-2">Encontrá los eventos más relevantes de tu ubicación</h4>
     
                 <div class="row">
                     <div class="col-sm-12 table-responsive" style="border:none;">
-                        <table class="table" id="">
-                            <thead>
-                                <tr role="row">
-                                    <th class="" style="width: 200px;">Tema</th>
-                                    <th class="" style="width: 200px;">Charla</th>
-                                    <th class="" style="width: 300px;">Formador</th>
-                                    <th class="" style="width: 250px;">Hora</th>
-                                    <th class="" style="width: 200px;"></th>                                    
-                                </tr>
-                            </thead>
-    
+                        <table class="table table-striped" id="">
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <p class="text-info"><b>21 de Mayo <br> 16:30 hs </b>
-                                        </p>
+                                    <td class="col-xs-1">
+                                        <span class="label label-primary">CURSO</span>
                                     </td>
-                                    <td class="">
-                                        <p class="m-r-2">Formación de Precios de Exportación</p>
+                                    <td class="col-xs-1">
+                                        <img src="img/img_profile.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:36px;">
                                     </td>
-                                    <td class="">
-                                        	<div class="col-xs-2"><img src="img/img_profile.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:48px;"></div>
-                                        	<div class="col-xs-10"><h6 class="m-l-2">Alexander Pierce</h6></div>
+                                    <td class="col-xs-4">
+                                        Titulo del curso
                                     </td>
-                                    <td class="logos-redes">
-                                        <p>Lunes 28 de Agosto | 10:00hs.</p>
+                                    <td>17%</td>
+                                    <td class="col-xs-3">
+                                        <div class="progress" style="height:15px;">
+                                          <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                            <span class="sr-only">60% Completado</span>
+                                          </div>
+                                        </div>
                                     </td>
-                                    <td>
-                                    	<button class="btn btn-primary btn-sm width100">Ver ahora</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p class="text-info"><b>21 de Mayo <br> 16:30 hs </b>
-                                        </p>
-                                    </td>
-                                    <td class="">
-                                        <p class="m-r-2">Formación de Precios de Exportación</p>
-                                    </td>
-                                    <td class="">
-                                        	<div class="col-xs-2"><img src="img/img_profile.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:48px;"></div>
-                                        	<div class="col-xs-10"><h6 class="m-l-2">Alexander Pierce</h6></div>
-                                    </td>
-                                    <td class="logos-redes">
-                                        <p>Lunes 28 de Agosto | 10:00hs.</p>
-                                    </td>
-                                    <td>
+                                    <td class="col-xs-2">
                                         <button class="btn btn-primary btn-sm width100">Agenda</button>
                                     </td>
-                                </tr>    
+                                </tr>  
+                                <tr>
+                                    <td class="col-xs-1">
+                                        <span class="label label-primary">FORO</span>
+                                    </td>
+                                    <td class="col-xs-1">
+                                        <img src="img/img_profile.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:36px;">
+                                    </td>
+                                    <td colspan="3" class="col-xs-7">
+                                        Busco cursos, charlas y herramientas gratuitas para capacitarme en administración, tecnología...
+                                    </td>
+                                    <td class="col-xs-2">
+                                        <i id="fa fa-folder-open" class="fa fa-folder-open icono-2x text-gray" data-clipboard-text="fa-folder-open"></i>
+                                        <span class="badge badgePosition bg-success text-white">48</span>
+                                        
+                                        <i id="fa fa-folder-open" class="fa fa-folder-open icono-2x text-gray" data-clipboard-text="fa-folder-open"></i>
+                                        <span class="badge badgePosition bg-success text-white">48</span>                                        
+                                    </td>
+                                </tr>  
                             </tbody>
-    
-    
                         </table>
                     </div>
 
@@ -313,10 +304,63 @@
             </div>
         </section>
 
+    
+        <section class="container-fluid tabla-eventos bg-white">
+            <div class="container">
+                <h2 class="text-center">Charlas</h2>
+                <h4 class="text-center m-b-2">Encontrá los eventos más relevantes de tu ubicación</h4>
+    
+                <div class="row">
+                    <div class="col-sm-12 table-responsive" style="border:none;">
+                        <table class="table" id="">
+                            <thead>
+                                <tr role="row">
+                                    <th class="col-md-3 col-sm-4" colspan="2">Tema</th>
+                                    <th class="">Charla</th>
+                                    <th class="col-md-3 col-sm-4" colspan="2">Formador</th>
+                                    <th class="">Hora</th>
+                                    <th class="col-md-2 col-sm-1"></th>                                    
+                                </tr>
+                            </thead>
+    
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/img_profile.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:36px;"></td>
+                                    <td>
+										Comercio Exterior
+                                    </td>
+                                    <td class="">
+                                        Formación de Precios de Exportación
+                                    </td>
+                                    <td class="">
+                                        <img src="img/img_profile.jpg" style="color:#0695d6; border-radius: 50%; border: 4px solid #0695d6; width:36px;">
+                                    </td>
+                                    <td>
+                                    	Alexander Pierce
+                                    </td>
+                                    <td class="logos-redes">
+                                        Lunes 28 de Agosto | 10:00hs.
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm width100">Agenda</button>
+                                    </td>
+                                </tr>  
+                            </tbody>
+    
+    
+                        </table>
+                    </div>
+                    
+                    <div align="center">
+                    	<a class="btn btn-primary text-center">Ver todas las charlas</a>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
 
         <section id="section-1" class="container bg-claro">
-            <h2 class="text-center">Eventos destacados</h2>
-    
             <div class="panel panel-default panel-agenda-evento">
                 <div class="panel-body">
                     <div class="col-md-6 evento-img" style="background-image: url(dist-palta/img/llamas.jpg);">
@@ -324,14 +368,8 @@
                     </div>
                     <!-- col-md-6 -->
                     <div class="col-md-6">
-                        <p class="text-primary"><b>09/05 al 19/05</b>
-                        </p>
-                        <h2>Semana del coworking</h2>
-                        <p><b>Biblioteca "La Nube"</b>
-                        </p>
-                        <p><small>Newbery, Jorge Av. 3537, Ciudad de Buenos Aires</small>
-                        </p>
-                        <p class="m-t-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                        <h2>Tips</h2>
+                        <p class="m-t-2">Consejos prácticos, decálogos, conceptos en 30 segundos y pasos a seguir para aplicar en tu negocio</p>
                         <a href="evento-externo.html">
                             <button class="btn btn-primary m-y-1">
                                 Ver más
@@ -366,6 +404,7 @@
 
     </main>
     
+
     <!--position:fixed; bottom:-10px; width:100%; padding-top:40px;-->
     <footer class="main-footer">
         <div class="container">
