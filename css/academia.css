@@ -19,9 +19,6 @@
 .width100 { width:100%;}
 
 
-/*CHRISTIAN*/
-
-
 /*PALETA DE COLORES DE ACADEMIA*/
 
 
@@ -95,19 +92,8 @@ Usar bg-primary*/
 	color: #79c7ec !important;
 }
 
-
 /*Emprender - 
 Usar bg-warning*/
-
-
-
-
-
-
-
-
-
-
 
 .text-gris {
 	color: #808080 !important;
@@ -157,20 +143,12 @@ Usar bg-warning*/
 }
 
 
-
-.academia-filtros .fa-circle {
+.fa-circle {
 	font-size: 12px;
 	margin-bottom: 2px;
 	margin-right:5px;
 	margin-left:10px;
 }
-
-
-
-
-
-
-
 
 .padding-10 {
 	padding:10px !important;
