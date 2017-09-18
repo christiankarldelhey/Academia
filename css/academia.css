@@ -129,8 +129,8 @@ Usar bg-warning*/
 	margin-top:0px !important;
 }
 
-.academia-filtros input {
-	margin-right: 40px;
+.academia-filtros label {
+	margin-right: 30px;
 }
 
 .academia-filtros h3 {
@@ -138,23 +138,34 @@ Usar bg-warning*/
 	font-weight: bold;
 }
 
-.academia-filtros .nav-pills>a>li, .academia-filtros .nav-pills>a>li>span {
+.academia-filtros .nav-pills>li>a {
+	padding-left:10px;
+	cursor:pointer; 
+}
+
+.academia-filtros .nav-pills>li>a, .academia-filtros .nav-pills>li>a>span {
 	padding-top:3px;
 	padding-bottom:3px;
 	padding-left:0px;
 	font-weight:400;
 }
 
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color:#0695d6;
+    text-decoration: none;
+    background-color: #eee;
+}
+
+
+
 .academia-filtros .fa-circle {
 	font-size: 12px;
 	margin-bottom: 2px;
 	margin-right:5px;
+	margin-left:10px;
 }
 
-.nav>a>li:focus, .nav>a>li:hover {
-    text-decoration: none;
-    background-color: #eee;
-}
+
 
 
 
