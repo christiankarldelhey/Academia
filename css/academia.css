@@ -75,7 +75,6 @@ Usar bg-primary*/
 	color: #89325E !important;
 }
 
-
 /*Tecnologia*/
 .bg-naranja {
 	background-color: #f57539 !important;
@@ -136,19 +135,27 @@ Usar bg-warning*/
 	font-weight:400;
 }
 
+.academia-hr {
+	margin-top:15px;
+	margin-bottom:15px;
+	/*margin-left: -15px;*/
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
     color:#0695d6;
     text-decoration: none;
     background-color: #eee;
 }
 
-
-.fa-circle {
+.academia-relacionadas .fa-circle, .academia-filtros .fa-circle {
 	font-size: 12px;
 	margin-bottom: 2px;
 	margin-right:5px;
 	margin-left:10px;
 }
+
+
+
 
 .padding-10 {
 	padding:10px !important;
