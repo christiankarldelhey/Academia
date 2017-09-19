@@ -155,7 +155,7 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label class="control-label">Edad</label> 
-                                                <input class="form-control"  data-inputmask="mask: 99" data-mask="" value="">
+                                                <input class="form-control"  data-inputmask="&quot;mask&quot;: &quot;99&quot;" data-mask="" value="">
                                             </div>
                                         </div>
                                         <div class="col-md-8">
@@ -182,7 +182,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="control-label">CUIT</label> 
-                                                <input class="form-control" data-inputmask="mask: 99-99999999-9" data-mask="" type="text" value="">
+                                                <input class="form-control" data-inputmask="&quot;mask&quot;: &quot;99-99999999-9&quot;" data-mask="" type="text" value="">
                                             </div>
                                         </div>                                                                                            
                                         <div class="col-md-12" id="otros">
@@ -234,11 +234,22 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
+                                            <label class="control-label" for="txtxxx">Relación con la empresa <span class="requiredField">*</span></label>
+                                            <div class="input-group m-b-2 width100">
+                                                <div id="radioBtn" class="btn-group width100">
+                                                    <span class="btn btn-default" data-toggle="estado" data-value="1" style="width:33%;">Dueño</span>
+                                                    <span class="btn btn-default" data-toggle="estado" data-value="2" style="width:33%;">Familiar</span>
+                                                    <span class="btn btn-default" data-toggle="estado" data-value="3" style="width:34%;">Empleado</span>
+                                                </div>
+                                                <input type="hidden" name="estado" id="estado" value="Y">
+                                            </div>                        
+                                        </div>   
+                                        <div class="col-md-12">
                                             <div class="form-group">
-                                                <label class="control-label">Descripción *</label> 
+                                                <label class="control-label">Rol *</label> 
                                                 <textarea class="form-control" cols="4" type="text" value=""></textarea>
                                             </div>
-                                        </div>                                        
+                                        </div>                                                                                
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="control-label">Tamaño de la empresa</label> 
@@ -246,6 +257,7 @@
                                                     <option>- Seleccionar -</option>
                                                     <option value="">Pequeña</option>
                                                     <option value="">Mediana</option>
+                                                    <option value="">Grande</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -265,26 +277,6 @@
                                                 </select>
                                             </div>
                                         </div>     
-                                        
-                                        <div class="col-md-12">
-                                            <label class="control-label" for="txtxxx">Asisto actualmente a esta empresa <span class="requiredField">*</span></label>
-                                            <div class="input-group m-b-2 width100">
-                                                <div id="radioBtn" class="btn-group width100">
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="1" style="width:33%;">Dueño</span>
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="2" style="width:33%;">Familiar</span>
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="3" style="width:34%;">Empleado</span>
-                                                </div>
-                                                <input type="hidden" name="estado" id="estado" value="Y">
-                                            </div>                        
-                                        </div>                                    
-                                        
-                                        <div class="col-md-12" id="otros">
-                                            <div class="form-group">
-                                                <label class="control-label">Correo *</label> 
-                                                <input class="form-control" id="" type="email" value="">
-                                            </div>
-                                        </div>
-                                        
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="control-label">Website</label> 
@@ -364,6 +356,10 @@
 <script src="plugins/input-mask/jquery.inputmask.js"></script>
 <script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
 <script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+<script>
+    //Datemask dd/mm/yyyy
+    $("[data-mask]").inputmask();
+</script>
 
 <!-- Datepicker -->
 <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
