@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="css/templates.css">
     
     <!-- FORMULARIO -->
+
+  <!-- BOOTSTRAP-Choosen Autocomplete -->
+  <link rel="stylesheet" href="plugins/bootstrap-chosen-master/bootstrap-chosen.css">
+
     
     <!-- iCheck -->
     <link href="plugins/iCheck/all.css" rel="stylesheet">
@@ -171,14 +175,28 @@
                                         
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <label class="control-label">Provincia</label> 
-                                                <select class="form-control">
-                                                    <option>- Seleccionar -</option>
-                                                    <option value="">Femenino</option>
-                                                    <option value="">Masculino</option>
+                                                <label class="control-label">Provincia</label>
+                                                <select data-placeholder="Seleccione un país" class="form-control chosen-select" tabindex="-1" style="width:100%;">
+                                                    <option value=""></option>
+                                                    <option value="Argentina">Argentina</option>
+                                                    <option value="Armenia">Armenia</option>
+                                                    <option value="Aruba">Aruba</option>
+                                                    <option value="Nepal">Nepal</option>
+                                                    <option value="Netherlands">Netherlands</option>
+                                                    <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                                    <option value="New Caledonia">New Caledonia</option>
+                                                    <option value="New Zealand">New Zealand</option>
+                                                    <option value="Nicaragua">Nicaragua</option>
+                                                    <option value="Niger">Niger</option>
+                                                    <option value="Nigeria">Nigeria</option>
+                                                    <option value="Niue">Niue</option>
+                                                    <option value="Norfolk Island">Norfolk Island</option>
+                                                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                                    <option value="Norway">Norway</option>
                                                 </select>
                                             </div>
-                                        </div>                            
+                                        </div>                        
+                        
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="control-label">CUIT</label> 
@@ -386,6 +404,16 @@
     });	
 
 </script>
+
+<!-- Autocomplete -->
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+<script>
+  $(function() {
+	$('.chosen-select').chosen();
+	$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+  });
+</script>
+
 
 
 </body>
