@@ -177,3 +177,19 @@ Usar bg-warning*/
 }
 
 .width100 { width:100% !important;}
+
+.btn-contorno {
+    background-color: white;
+    color: #0695D6;
+    padding: 14px 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: 2px solid #0695D6;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+}
+
+.panel-heading {
+    min-height: auto !important;
+}
