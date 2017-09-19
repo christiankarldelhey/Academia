@@ -1,0 +1,373 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>dashboard editar proyecto</title>
+    <link rel="shortcut icon" href="dist-palta/img/favicon.ico">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    
+    <!-- BOOTSTRAP -->
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/templates.css">
+    
+    <!-- FORMULARIO -->
+    
+    <!-- iCheck -->
+    <link href="plugins/iCheck/all.css" rel="stylesheet">
+    
+    <!-- BOOTSTRAP-Tags Input files -->
+    <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/examples/assets/app.css">
+    
+    <!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-fullscreen-select/css/bootstrap-fullscreen-select.css">
+    
+    <!-- BOOTSTRAP-Choosen Autocomplete -->
+    <link rel="stylesheet" href="plugins/bootstrap-chosen-master/bootstrap-chosen.css">
+    <!-- BOOTSTRAP-Datepicker -->
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+    
+    <!-- DATE-RANGE PICKER -->
+    <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <!-- Icono-Arg -->  
+    <link rel="stylesheet" href="css/icono-arg.css">
+    
+    <!-- IONICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    
+    <!-- FULL CALENDAR 2.2.5-->
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css" media="print">
+    <!-- Theme style -->
+    
+    <!-- PALTA dist-palta -->
+    <link rel="stylesheet" href="css/poncho.min.css">
+    <!-- bootstrap wysihtml5 - text editor -->
+    <link rel="stylesheet" href="css/palta.css">
+    
+    <link rel="stylesheet" href="css/AdminLTE.css">    
+    <link rel="stylesheet" href="css/academia.css">
+  
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Burger</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="img/logoministerio.png" height="50" alt="">
+                        </a>
+                    </div>
+    
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                        	<li class=""><a href="" class="nohover" style="font-weight: bold;">ACADEMIA PYME</a></li>                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CAPACITACIONES <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="">MISIÓN</a>
+                                    </li>
+                                    <li><a href="">EL MINISTRO</a>
+                                    </li>
+                                    <li><a href="">ORGANIGRAMA</a>
+                                    </li>
+                                    <li><a href="">SECRETARIAS</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">FORO</a></li>
+                            
+                            <!-- Not logged-->
+                            <a href="#myModal" class="btn btn-success" data-toggle="modal" style="display:none;">INGRESÁ</a>                          
+                            <!-- Logged -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-user navIco"></i>
+                                     <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" style="width:100%;">
+                                    <li>
+                                        <a href="#" class="">Profile</a>
+                                        <a href="#" class="">Sign out</a>
+                                    </li>
+                                </ul>
+                            </li>                            
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="bg-white">
+        <section class="content-header container"><!-- se cambió container por content-header -->
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li class="active">Editar Mi Perfil</li>
+            </ol>
+            <h1>Editar Mi Perfil</h1>
+        </section>    
+            
+        <section class="bg-white">
+        	<div class="container">
+            	<div class="row">
+                	<div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading bg-primary text-white text-left">
+                                <h4>Datos Personales</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <form class="form-azul">
+                                        <div class="col-md-12 m-t-1">
+                                            <div class="form-group">
+                                                <label class="control-label">Nombre *</label> 
+                                                <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Apellido *</label> 
+                                                <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Descripción *</label> 
+                                                <textarea class="form-control" cols="4" type="text" value=""></textarea>
+                                            </div>
+                                        </div>                                        
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Edad</label> 
+                                                <input class="form-control"  data-inputmask="mask: 99" data-mask="" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Genero</label> 
+                                                <select class="form-control">
+                                                    <option>- Seleccionar -</option>
+                                                    <option value="">Femenino</option>
+                                                    <option value="">Masculino</option>
+                                                </select>
+                                            </div>
+                                        </div>     
+                                        
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Provincia</label> 
+                                                <select class="form-control">
+                                                    <option>- Seleccionar -</option>
+                                                    <option value="">Femenino</option>
+                                                    <option value="">Masculino</option>
+                                                </select>
+                                            </div>
+                                        </div>                            
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">CUIT</label> 
+                                                <input class="form-control" data-inputmask="mask: 99-99999999-9" data-mask="" type="text" value="">
+                                            </div>
+                                        </div>                                                                                            
+                                        <div class="col-md-12" id="otros">
+                                            <div class="form-group">
+                                                <label class="control-label">Correo *</label> 
+                                                <input class="form-control" id="" type="email" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Contraseña</label> 
+                                                <input class="form-control" data-mask="" type="password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Repetir contraseña</label> 
+                                                <input class="form-control" data-mask="" type="password">
+                                            </div>
+                                        </div>
+                                        <p class="m-t-1 col-lg-12"><small>* Campo requerido</small></p>
+                                        <div align="center" class="text-center col-md-12 m-t-1 m-b-2">
+                                            <button class="btn btn-success" type="button">Guardar</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                	<div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading bg-primary text-white text-left">
+                                <h4>Datos Personales</h4>
+                            </div>
+                            <div class="panel-body">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <form class="form-azul">
+                                        <div class="col-md-12 m-t-1">
+                                            <div class="form-group">
+                                                <label class="control-label">Nombre de la empresa*</label> 
+                                                <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Rubro *</label> 
+                                                <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Descripción *</label> 
+                                                <textarea class="form-control" cols="4" type="text" value=""></textarea>
+                                            </div>
+                                        </div>                                        
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Tamaño de la empresa</label> 
+                                                <select class="form-control">
+                                                    <option>- Seleccionar -</option>
+                                                    <option value="">Pequeña</option>
+                                                    <option value="">Mediana</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Antigûedad</label> 
+                                                <select class="form-control">
+                                                    <option>- Seleccionar -</option>
+                                                    <option value="">1</option>
+                                                    <option value="">2</option>
+                                                    <option value="">3</option>
+                                                    <option value="">4</option>
+                                                    <option value="">5</option>
+                                                    <option value="">6</option>
+                                                    <option value="">7</option>
+                                                    <option value="">8</option>
+                                                </select>
+                                            </div>
+                                        </div>     
+                                        
+                                        <div class="col-md-12" id="otros">
+                                            <div class="form-group">
+                                                <label class="control-label">Correo *</label> 
+                                                <input class="form-control" id="" type="email" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Contraseña</label> 
+                                                <input class="form-control" data-mask="" type="password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Repetir contraseña</label> 
+                                                <input class="form-control" data-mask="" type="password">
+                                            </div>
+                                        </div>                                        
+                                        
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Website</label> 
+                                                <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <p class="m-t-1"><small>* Campo requerido</small></p>
+                                        </div>
+                                        <div align="center" class="text-center col-md-12 m-t-1 m-b-2">
+                                            <button class="btn btn-success" type="button">Guardar</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+    
+
+    <!--position:fixed; bottom:-10px; width:100%; padding-top:40px;-->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 m-t-1">
+                    <a href="http://www.produccion.gob.ar/" target="_blank"><img class="image-responsive" src="img/logoMinisterio.png" alt="Ministerio de Producción"></a>
+                    <br>
+                    <p class="text-muted small">Los contenidos de Produccion.gob.ar están licenciados bajo <a href="https://creativecommons.org/licenses/by/2.5/ar/">Creative Commons Reconocimiento 2.5 Argentina License</a></p>
+                </div>
+                <div class="col-md-3 col-sm-6 m-t-1">
+                    <div id="nav_menu-3" class="widget_nav_menu"><div class="menu-footer-b-container">
+                    <ul id="menu-footer-b" class="menu"><li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http://www.produccion.gob.ar/institucional/mision/">Institucional</a></li>
+                      <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http://www.produccion.gob.ar/guia-de-tramites/">Trámites</a></li>
+                      <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http://www.produccion.gob.ar/mundopyme/">Mundo PyME</a></li>
+                      
+                            </ul></div></div>      </div>
+                <div class="col-md-3 col-sm-6 m-t-1">
+                    <div id="nav_menu-2" class="widget_nav_menu"><div class="menu-footer-a-container"><ul id="menu-footer-a" class="menu"><li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http://dna2-tests.produccion.gob.ar/digitalizacion/digitalizacionPyME/">Plan de digitalización</a></li>
+                    <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http://dna2-tests.produccion.gob.ar/digitalizacion/digitalizacionPyME/tyc">Términos y condiciones</a></li>
+                    <li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http://dna2-tests.produccion.gob.ar/digitalizacion/digitalizacionPyME/ayuda">Preguntas Frecuentes</a></li>
+                            </ul></div></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Slimscroll -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+
+<!-- iCheck -->
+<script src="plugins/iCheck/icheck.min.js"></script>
+<!-- Page Script -->
+
+
+<!-- FORMS -->
+
+<!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+<script type="text/javascript" src="plugins/bootstrap-fullscreen-select/js/bootstrap-fullscreen-select.js"></script>
+
+<!-- InputMask -->
+<script src="plugins/input-mask/jquery.inputmask.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.date.extensions.js"></script>
+<script src="plugins/input-mask/jquery.inputmask.extensions.js"></script>
+
+<!-- Datepicker -->
+<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+
+</body>
+</html>
