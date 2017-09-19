@@ -200,3 +200,7 @@ Usar bg-warning*/
 .panel-heading {
     min-height: auto !important;
 }
+
+.btn {
+  border: none !important;
+}
