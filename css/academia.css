@@ -189,6 +189,10 @@ Usar bg-warning*/
     -moz-border-radius: 4px 4px 4px 4px;
     -webkit-border-radius: 4px 4px 4px 4px;
 }
+.btn-contorno:hover {
+    border: 2px solid #3c8dbc !important;
+    color: #3c8dbc;
+}
 
 .panel-heading {
     min-height: auto !important;
