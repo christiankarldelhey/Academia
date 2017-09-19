@@ -19,9 +19,6 @@
 .width100 { width:100%;}
 
 
-/*CHRISTIAN*/
-
-
 /*PALETA DE COLORES DE ACADEMIA*/
 
 
@@ -78,7 +75,6 @@ Usar bg-primary*/
 	color: #89325E !important;
 }
 
-
 /*Tecnologia*/
 .bg-naranja {
 	background-color: #f57539 !important;
@@ -95,19 +91,8 @@ Usar bg-primary*/
 	color: #79c7ec !important;
 }
 
-
 /*Emprender - 
 Usar bg-warning*/
-
-
-
-
-
-
-
-
-
-
 
 .text-gris {
 	color: #808080 !important;
@@ -129,8 +114,8 @@ Usar bg-warning*/
 	margin-top:0px !important;
 }
 
-.academia-filtros input {
-	margin-right: 40px;
+.academia-filtros label {
+	margin-right: 30px;
 }
 
 .academia-filtros h3 {
@@ -138,25 +123,36 @@ Usar bg-warning*/
 	font-weight: bold;
 }
 
-.academia-filtros .nav-pills>a>li, .academia-filtros .nav-pills>a>li>span {
+.academia-filtros .nav-pills>li>a {
+	padding-left:10px;
+	cursor:pointer; 
+}
+
+.academia-filtros .nav-pills>li>a, .academia-filtros .nav-pills>li>a>span {
 	padding-top:3px;
 	padding-bottom:3px;
 	padding-left:0px;
 	font-weight:400;
 }
 
-.academia-filtros .fa-circle {
-	font-size: 12px;
-	margin-bottom: 2px;
-	margin-right:5px;
+.academia-hr {
+	margin-top:15px;
+	margin-bottom:15px;
+	/*margin-left: -15px;*/
 }
 
-.nav>a>li:focus, .nav>a>li:hover {
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color:#0695d6;
     text-decoration: none;
     background-color: #eee;
 }
 
-
+.academia-relacionadas .fa-circle, .academia-filtros .fa-circle {
+	font-size: 12px;
+	margin-bottom: 2px;
+	margin-right:5px;
+	margin-left:10px;
+}
 
 
 
