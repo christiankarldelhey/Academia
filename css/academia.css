@@ -228,6 +228,8 @@ Usar bg-warning*/
     color: #3c8dbc;
 }
 
-/*.panel-heading {
-    min-height: auto !important;
-}*/
+
+.btn {
+  border: none !important;
+}
+
