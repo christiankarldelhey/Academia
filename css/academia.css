@@ -212,24 +212,28 @@ Usar bg-warning*/
 
 .width100 { width:100% !important;}
 
-.btn-contorno {
-    background-color: white;
-    color: #0695D6;
-    padding: 14px 25px;
-    text-transform: capitalize;
-    font-weight: bold;
-    border: 2px solid #0695D6;
-    border-radius: 4px 4px 4px 4px;
-    -moz-border-radius: 4px 4px 4px 4px;
-    -webkit-border-radius: 4px 4px 4px 4px;
-}
-.btn-contorno:hover {
-    border: 2px solid #3c8dbc !important;
-    color: #3c8dbc;
-}
+
 
 
 .btn {
   border: none !important;
 }
 
+.panel-heading-title { min-height:54px !important;}
+
+.btn-contorno {
+    background-color: white;
+    color: #0695D6;
+    padding: 14px 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+	border: 2px solid #0695D6;
+}
+.btn-contorno:hover {
+    border: 2px solid #3c8dbc !important;
+    color: #3c8dbc;
+}
