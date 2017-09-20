@@ -50,7 +50,7 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="css/palta.css">
     
-    <link rel="stylesheet" href="css/AdminLTE.css">    
+       
     <link rel="stylesheet" href="css/academia.css">
   
 </head>
@@ -91,10 +91,10 @@
                             <li><a href="">FORO</a></li>
                             
                             <!-- Not logged-->
-                            <a href="#myModal" class="btn btn-success" data-toggle="modal" style="display:none;">INGRESÁ</a>                          
+                            <a href="#myModal" class="btn btn-success" data-toggle="modal">INGRESÁ</a>                          
                             <!-- Logged -->
                             <li class="dropdown user user-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"  style="display:none;">
                                     <i class="fa fa-user navIco"></i>
                                      <span class="caret"></span>
                                 </a>
@@ -452,6 +452,65 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+<div id="myModal" class="modal fade in" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <form class="academia-login" method="POST" action="login.php">
+                            <h4>Registrate en la Plataforma</h4>
+                            <div class="col-md-10 col-md-offset-1 m-t-2">
+
+                                <div class="col-xs-12 form-group">
+                                <button class="btn btn-primary btn-login btn-facebook btn-block">
+                                    Iniciar sesión con FACEBOOK
+                                </button>
+                                <button class="btn btn-danger btn-login btn-google btn-block">
+                                    Iniciar sesión con GOOGLE
+                                </button>
+
+                                <p class="m-y-1">O completá tus datos por única vez</p>
+
+                                </div>
+
+                            <div class="form-group col-md-6">
+                                <input class="form-control" placeholder="Nombre" type="" name="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input class="form-control" placeholder="Apellido" type="" name="">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input class="form-control" placeholder="Email" type="" name="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input class="form-control" placeholder="Contraseña" type="" name="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input class="form-control"  placeholder="Repetir contraseña" type="" name="">
+                            </div>
+
+                            
+                            <label class="checkbox-inline pull-left m-t-2">
+                                <input type="checkbox" value="">Acepto los términos y condiciones
+                            </label>
+                            
+
+                            <div class="col-xs-12 m-t-2 center-block">
+                                <button type="submit" id="ingresar" class="btn btn-primary btn-login">REGISTRARME</button>
+                            </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- jQuery 2.2.3 -->
