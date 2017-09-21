@@ -188,7 +188,7 @@ Usar bg-warning*/
 }
 
 
-input[type=checkbox]
+.academia-login input[type=checkbox]
         {
             /* Double-sized Checkboxes */
             -ms-transform: scale(2); /* IE */
@@ -197,6 +197,8 @@ input[type=checkbox]
             -o-transform: scale(2); /* Opera */
             padding: 10px;
             margin-right: 10px;
+            position: static ;
+    		margin-left: auto;
         }
 
 
