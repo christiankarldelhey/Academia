@@ -190,7 +190,7 @@ Usar bg-warning*/
 
 .academia-login input[type=checkbox]
         {
-            /* Double-sized Checkboxes */
+        /* Double-sized Checkboxes */
             -ms-transform: scale(2); /* IE */
             -moz-transform: scale(2); /* FF */
             -webkit-transform: scale(2); /* Safari and Chrome */
@@ -200,6 +200,25 @@ Usar bg-warning*/
             position: static ;
     		margin-left: auto;
         }
+
+.img-resultados {
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height:200px;
+	position: relative;
+}
+
+.etiqueta {
+	background-color: #2C93C9;
+	color:white;
+	padding: 2px 5px;
+}
+
+.etiqueta-sobre {
+	position: absolute;
+	left:15px;
+	top:15px;
+}
 
 
 
