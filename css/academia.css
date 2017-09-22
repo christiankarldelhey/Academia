@@ -53,8 +53,14 @@ Usar bg-info*/
 	color: #37895b !important;
 }
 
-/*Comercializacion -
-Usar bg-danger*/
+/*Comercializacion*/
+.bg-rojo {
+background-color: #D14845;
+}
+
+.text-rojo {
+	color: #D14845;
+}
 
 /*Recursos Humanos - 
 Usar bg-primary*/
