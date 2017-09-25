@@ -124,7 +124,14 @@
           
           <div class="container"> <!-- CONTENEDOR -->
           <h3>Tips</h3>
-        <section class="col-md-9 academia-paneles">
+
+    <div class="container visible-sm visible-xs">
+      <div class="col-xs-4 text-left m-t-1">
+          <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#academia-filtros">Filtrar
+          </button>
+      </div>
+    </div>  
+        <section class="col-md-9 academia-paneles" id="primero">
             <div class="row panels-row">
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <a class="panel panel-default panel-icon panel-secondary" href="##">
@@ -231,7 +238,7 @@
             </div>
         </section>
 
-        <section class="col-md-3 academia-filtros p-r-0">
+        <section id="academia-filtros" class="col-md-3 academia-filtros p-r-0">
 
           
             <h4>FILTROS</h4>
@@ -412,6 +419,27 @@
     $(this).parent().addClass('active').siblings().removeClass('active');
 
     });
+</script>
+
+<script type="text/javascript">  
+$(window).resize(function() {
+    var responsive_viewport = $(window).width();
+    if (responsive_viewport < 992) {             
+        $('#academia-filtros').after($('#primero'))
+    }
+    else {
+        $('#primero').after($('#academia-filtros')) 
+    }
+})
+</script>
+
+<script type="text/javascript">
+  if ($(window).width() < 992) {
+ $('#academia-filtros').after($('#primero'))
+    }
+    else {
+        $('#primero').after($('#academia-filtros')) 
+    }
 </script>
 
 </body>

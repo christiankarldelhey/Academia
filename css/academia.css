@@ -226,7 +226,28 @@ Usar bg-warning*/
 	top:15px;
 }
 
+/*media queries*/
 
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+.academia-filtros {
+	display:none;
+}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+.academia-filtros {
+	display:block !important;
+}
+
+}
+
+
+/*MARIAN*/
 
 .padding-10 {
 	padding:10px !important;

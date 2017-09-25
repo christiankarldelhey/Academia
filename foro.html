@@ -121,19 +121,27 @@
     </header>
 
 	<main class="bg-white">
+
     	<section class="content-header container" style="padding: 0 15px;"><!-- se cambió container por content-header -->
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li class="active">Foro</li>
             </ol>
         </section>
+
+    <div class="container visible-sm visible-xs">
+      <div class="col-xs-4 text-left m-t-1">
+          <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#academia-filtros">Filtrar
+          </button>
+      </div>
+    </div>  
     
-        <section class="bg-white p-t-0"><!-- se cambió container por content-header -->
+        <section  class="bg-white p-t-0"><!-- se cambió container por content-header -->
         	<div class="container">
             	
             
                 <div class="row">
-                    <div class="col-md-9 col-sm-8">
+                    <div class="col-md-9 col-sm-8"  id="primero">
                     	<h1 class="m-t-0 p-t-0">Foro</h1>
                         <div class="panel panel-default">
                             <div class="panel-heading panel-heading-title bg-primary text-white text-left">
@@ -226,7 +234,8 @@
                     
                     </div>                    
                     
-                    <div class="col-md-3 col-sm-4 academia-filtros p-r-0">
+
+                    <div id="academia-filtros" class="col-md-3 academia-filtros p-r-0">
                         <h4>FILTROS</h4>
                         <div class="col-md-11 col-md-offset-1 text-primary academia-checklist m-b-2">
                             <div class="row">
@@ -306,6 +315,8 @@
             
             </div>
         </section>
+
+
 	</main>
     
         
@@ -426,6 +437,27 @@
     $(this).parent().addClass('active').siblings().removeClass('active');
 
     });
+</script>
+
+<script type="text/javascript">  
+$(window).resize(function() {
+    var responsive_viewport = $(window).width();
+    if (responsive_viewport < 992) {             
+        $('#academia-filtros').after($('#primero'))
+    }
+    else {
+        $('#primero').after($('#academia-filtros')) 
+    }
+})
+</script>
+
+<script type="text/javascript">
+  if ($(window).width() < 992) {
+ $('#academia-filtros').after($('#primero'))
+    }
+    else {
+        $('#primero').after($('#academia-filtros')) 
+    }
 </script>
 
 </body>
