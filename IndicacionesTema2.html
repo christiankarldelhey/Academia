@@ -142,7 +142,7 @@
 
           <div class="container"> <!-- CONTENEDOR -->
 
-        <section id="primero" class="col-md-9 academia-paneles">
+        <section id="primero" class="col-lg-9 col-md-8 col-xs-12 academia-paneles">
             <div class="row panels-row">
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <a class="panel panel-default panel-icon panel-secondary" href="##">
@@ -263,7 +263,7 @@
                         </div>
         </section>
 
-        <section class="col-md-3 academia-filtros p-r-0" id="academia-filtros">
+        <section class="col-lg-3 col-md-4 col-xs-12 academia-filtros p-r-0" id="academia-filtros">
 
           
             <h4>FILTROS</h4>
@@ -440,6 +440,24 @@
 <!-- iCheck -->
 <script src="plugins/iCheck/icheck.min.js"></script>
 <!-- Page Script -->
+
+<script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+</script>
+
+
+
+
+
 
 
 <!-- FORMS -->

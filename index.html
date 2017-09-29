@@ -49,17 +49,13 @@
     <link rel="stylesheet" href="css/poncho.min.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="css/palta.css">
-    
-       
     <link rel="stylesheet" href="css/academia.css">
   
 </head>
 <body>
 
     <header>
-
-
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
@@ -72,6 +68,17 @@
                         </button>
                         <a class="navbar-brand" href="#"><img src="img/logoministerio.png" height="50" alt="">
                         </a>
+                        
+            <!-- BOTONES DE BUSQUEDA Y USER SOLO XS -->
+
+            <!-- user -->
+            <a class="btn btn-success btn-login visible-xs" href="">
+              <span class="fa fa-user fa-fw"></span>
+            </a>
+            <!-- search -->
+            <a onclick="jQuery('.navbar.navbar-top').addClass('state-search');" class="btn btn-primary btn-login visible-xs" href="#">
+              <span class="fa fa-search fa-fw"></span>
+            </a>
                     </div>
     
                     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -92,7 +99,6 @@
                                 </ul>
                             </li>
                             <li><a href="">FORO</a></li>
-                            
                             <!-- Not logged-->
                             <a href="#myModal3" class="btn btn-success" data-toggle="modal">INGRESÁ</a>                          
                             <!-- Logged -->
@@ -107,16 +113,18 @@
                                         <a href="#" class="">Sign out</a>
                                     </li>
                                 </ul>
-                            </li>                            
-                        </ul>
-                    </div> -->
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
+                            </li> -->    
+
+                         </ul>
+                    </div> <!-- /.navbar-collapse -->
+
+
+                </div> <!-- /.container-fluid -->
             </div>
         </nav>
-      
     </header>
+
+
 
     <main role="main">
     
@@ -132,12 +140,12 @@
                     </div>
                     
                     <!-- lOGGED -->
-                    <div class="row hidden">
+                    <!-- <div class="row hidden">
                         <div class="animated-fade-in col-xs-12 col-md-8 col-md-offset-2 text-center">
                             <h1 style="">Hola Julia Robertini!</h1>
                             <p>Seguí capacitándote en Academia PyME. Hay más cursos, charlas y herramientas gratuitas para que te capacites en administración, tecnología, comercio exterior y mucho más.</p>
                         </div>
-                    </div>                    
+                    </div>-->  
                 </div>
             </div>
 
@@ -695,6 +703,9 @@
 <script src="plugins/iCheck/icheck.min.js"></script>
 <!-- Page Script -->
 
+<!-- search -->
+<script src="js/search.js"></script>
+
 
 <!-- FORMS -->
 
@@ -710,9 +721,7 @@
 <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
 <script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
 
-<!-- search -->
-<script src="js/classie.js"></script>
-<script src="js/search.js"></script>
+
 
 </body>
 </html>

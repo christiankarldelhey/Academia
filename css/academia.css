@@ -250,8 +250,10 @@ Usar bg-warning*/
 /*TEST*/
 
 
-
-
+.navbar-default .navbar-nav>li>a.nohover:hover, .navbar-default .navbar-nav>li>a.nohover:focus {
+    background: #fff;
+    color: #0695d6;
+}
 
 
 
@@ -308,3 +310,48 @@ Usar bg-warning*/
 td .progress, td .btn {
     margin-bottom: 0px;
 }
+
+
+
+/*HAMBURGUER EN MD*/
+
+/*@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;z
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}*/
+
+
+
+
