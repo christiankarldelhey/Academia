@@ -54,7 +54,6 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="css/palta.css">
     
-    <link rel="stylesheet" href="css/AdminLTE.css">    
     <link rel="stylesheet" href="css/academia.css">
   
 </head>
@@ -150,6 +149,15 @@
                                                 <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
                                             </div>
                                         </div>
+                                        
+                                        <div class="form-group col-md-12 m-b-0">
+                                            <label class="col-xs-12 control-label p-x-0">Foto de perfil</label>
+                                                <label class="control-label btn p-x-2 m-b-2 btn-link btn-file">
+                                                	SELECCIONA ARCHIVO
+                                                <input type="file" style="display:none;">
+                                            </label>
+                                        </div>                                        
+                                        
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="control-label">Descripción *</label> 
@@ -173,10 +181,10 @@
                                             </div>  
                                         </div>    
                                         
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="control-label">Provincia</label>
-                                                <select data-placeholder="Seleccione provincia" class="form-control chosen-select" tabindex="-1" style="width:100%;">
+                                        <div class="col-md-12 col-xs-12">
+                                            <div class="form-group" style="width:100% !important;">
+                                                <label class="control-label">Provincia</label><br />
+                                                <select data-placeholder="Seleccione provincia" class="form-control chosen-select" tabindex="-1" style="width:100% !important;">
                                                     <option value=""></option>
                                                     <option value="Argentina">Argentina</option>
                                                     <option value="Armenia">Armenia</option>
@@ -223,7 +231,7 @@
                                         </div>
                                         <p class="m-t-1 col-lg-12"><small>* Campo requerido</small></p>
                                         <div align="center" class="text-center col-md-12 m-t-1 m-b-2">
-                                            <button class="btn btn-success" type="button">Guardar</button>
+                                            <button class="btn btn-success col-xs-6 col-xs-offset-3" type="button">Guardar</button>
                                         </div>
                                     </form>
                                 </div>
@@ -257,9 +265,9 @@
                                             <label class="control-label" for="txtxxx">Relación con la empresa <span class="requiredField">*</span></label>
                                             <div class="input-group m-b-2 width100">
                                                 <div id="radioBtn" class="btn-group width100">
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="1" style="width:33%;">Dueño</span>
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="2" style="width:33%;">Familiar</span>
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="3" style="width:34%;">Empleado</span>
+                                                    <span class="btn btn-default" data-toggle="estado" data-value="1" style="width:30%; padding: 16px 4px;">Dueño</span>
+                                                    <span class="btn btn-default" data-toggle="estado" data-value="2" style="width:33%; padding: 16px 4px;">Familiar</span>
+                                                    <span class="btn btn-default" data-toggle="estado" data-value="3" style="width:37%; padding: 16px 6px;">Empleado</span>
                                                 </div>
                                                 <input type="hidden" name="estado" id="estado" value="Y">
                                             </div>                        
@@ -319,7 +327,7 @@
                                             <div class="form-group">
                                                 <div class="input-group">
                                                     <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                                        <i class="fa fa-facebook fa-2x"></i>
+                                                        <i class="fa fa-facebook fa-2x" style="padding:6px 4px;"></i>
                                                     </div>
                                                     <input type="text" id="face" name="face" class="form-control pull-right">
                                                 </div>
@@ -344,7 +352,7 @@
                                             <p class="m-t-1"><small>* Campo requerido</small></p>
                                         </div>
                                         <div align="center" class="text-center col-md-12 m-t-1 m-b-2">
-                                            <button class="btn btn-success" type="button">Guardar</button>
+                                            <button class="btn btn-success col-xs-6 col-xs-offset-3" type="button">Guardar</button>
                                         </div>
                                     </form>
                                 </div>
