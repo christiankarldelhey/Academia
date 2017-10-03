@@ -15,8 +15,9 @@
 	border-top: none;
 }
 
-
-.width100 { width:100%;}
+.width100 { 
+	width:100%;
+}
 
 
 /*PALETA DE COLORES DE ACADEMIA*/
@@ -30,6 +31,11 @@
 	color: #C8D171 !important;
 }
 
+a.p-finanzas:hover, a.p-finanzas:focus {
+    background: #C8D171;
+    color: #fff;
+}
+
 /*Comercio exterior*/
 .bg-lila  {
 	background-color: #A294B9 !important;
@@ -38,12 +44,26 @@
 	color: #A294B9 !important;
 }
 
-/*Medio Ambiente - 
-Usar bg-success*/
+a.p-comercio-exterior:hover, a.p-comercio-exterior:focus {
+    background: #A294B9;
+    color: #fff;
+}
 
+/*Medio Ambiente - 
+Usar bg-success
+*/
+a.p-medio-ambiente:hover, a.p-medio-ambiente:focus {
+    background: #3c763d;
+    color: #fff;
+}
 
 /*Calidad - 
 Usar bg-info*/
+a.p-calidad:hover, a.p-calidad:focus {
+    background: #d9edf7;
+    color: #fff;
+}
+
 
 /*Seguridad*/
 .bg-verde  {
@@ -51,6 +71,11 @@ Usar bg-info*/
 }
 .text-verde  {
 	color: #37895b !important;
+}
+
+a.p-seguridad:hover, a.p-seguridad:focus {
+    background: #37895b;
+    color: #fff;
 }
 
 /*Comercializacion*/
@@ -62,8 +87,14 @@ background-color: #D14845;
 	color: #D14845;
 }
 
+a.p-comercializacion:hover, a.p-comercializacion:focus {
+    background: #D14845;
+    color: #fff;
+}
+
 /*Recursos Humanos - 
 Usar bg-primary*/
+
 
 /*Administracion*/
 .bg-violeta-2 {
@@ -71,6 +102,11 @@ Usar bg-primary*/
 }
 .text-violeta-2 {
 	color: #79528D !important;
+}
+
+a.p-administracion:hover, a.p-administracion:focus {
+    background: #79528D;
+    color: #fff;
 }
 
 /*Produccion*/
@@ -81,12 +117,22 @@ Usar bg-primary*/
 	color: #89325E !important;
 }
 
+a.p-produccion:hover, a.p-produccion:focus {
+    background: #89325E;
+    color: #fff;
+}
+
 /*Tecnologia*/
 .bg-naranja {
 	background-color: #f57539 !important;
 }
 .text-naranja {
 	color: #f57539 !important;
+}
+
+a.p-tecnologia:hover, a.p-tecnologia:focus {
+    background: #f57539;
+    color: #fff;
 }
 
 /*Marco regulatorio*/
@@ -97,8 +143,18 @@ Usar bg-primary*/
 	color: #79c7ec !important;
 }
 
+a.p-marco-regulatorio:hover, a.p-marco-regulatorio:focus {
+    background: #79c7ec;
+    color: #fff;
+}
+
 /*Emprender - 
 Usar bg-warning*/
+a.p-emprender:hover, a.p-emprender:focus {
+    background: #8a6d3b;
+    color: #fff;
+}
+
 
 .text-gris {
 	color: #808080 !important;
@@ -255,6 +311,15 @@ Usar bg-warning*/
     color: #0695d6;
 }
 
+/*HEADER*/
+
+/*header .navbar.navbar-top .input-group input {
+    height: 43px;
+}*/
+
+#bs-example-navbar-collapse-1 form button.btn-primary {
+	height:46px !important;
+}
 
 
 /*MARIAN*/
@@ -275,9 +340,6 @@ Usar bg-warning*/
 }
 
 .width100 { width:100% !important;}
-
-
-
 
 /*.btn {
   border: none !important;
@@ -360,6 +422,10 @@ td .progress, td .btn {
     }
 }
 
-
+@media (max-width: 992px) and (min-width: 767px) {
+	header form .search-input {
+		margin-left:0px !important;
+	}
+}
 
 
