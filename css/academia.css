@@ -420,12 +420,17 @@ td .progress, td .btn {
     .collapse.in{
         display:block !important;
     }
+
+    #bs-example-navbar-collapse-1 .btn-success {
+		margin-left:0px !important;
+	}
 }
 
 @media (max-width: 992px) and (min-width: 767px) {
 	header form .search-input {
 		margin-left:0px !important;
 	}
+
 }
 
 
