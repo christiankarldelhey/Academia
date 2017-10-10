@@ -329,14 +329,16 @@ a.p-emprender:hover, a.p-emprender:focus {
 }
 
 .badge { 
-	padding: 4px;
+    font-size: 12px !important;
+	padding: 2px 6px;
 	font-size: 14px;
+    border-radius:30%;
 }
 
 .badgePosition {     
 	position: relative;
-	top: -19px;
-	left: -25px;
+	top: -17px;
+	left: -16px;
 }
 
 .width100 { width:100% !important;}
@@ -432,5 +434,38 @@ td .progress, td .btn {
 	}
 
 }
+
+/*ANIMACION DE REC*/
+
+
+@keyframes blink{
+  from {opacity: 1;} 
+  to {opacity: 0; } 
+}
+
+.loader-block {
+    display:inline-block;
+    background: red;
+    animation: blink 1.7s infinite 100ms;
+}
+
+.loader {
+    display:inline-block;
+    margin:0px;
+}
+
+.loader--smartie__container{
+    margin-top:3px;
+}
+
+.loader--smartie .loader-block {
+    margin:0px !important;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    border-radius:50%;
+    vertical-align: top;
+}
+
 
 
