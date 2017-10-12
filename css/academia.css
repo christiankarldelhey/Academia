@@ -273,13 +273,32 @@ a.p-emprender:hover, a.p-emprender:focus {
 .etiqueta {
 	background-color: #2C93C9;
 	color:white;
-	padding: 2px 5px;
+	padding: 2px 5px !important;
+    padding-right:0px !important;
+}
+
+.etiqueta-gris {
+    background-color: #C3C3C3;
+    font-weight: bold;
+    padding: 3px !important;
+    padding-right:8px !important;
+    color:black !important;
+
+}
+.etiqueta i {
+    padding: 2px 5px !important;
+    font-size: 16px !important;
+
 }
 
 .etiqueta-sobre {
 	position: absolute;
 	left:15px;
 	top:15px;
+}
+
+.etiqueta span {
+    padding: 4px !important;
 }
 
 /*media queries*/
@@ -446,7 +465,7 @@ td .progress, td .btn {
 .loader-block {
     display:inline-block;
     background: red;
-    animation: blink 1.7s infinite 100ms;
+    animation: blink 1.3s infinite 100ms;
 }
 
 .loader {
@@ -468,4 +487,17 @@ td .progress, td .btn {
 }
 
 
+.label {
+    padding: 5px;
+    min-width: 70px !important;
+    display: inline-block !important
+}
 
+.panel-charlas .panel-heading {
+    
+}
+
+img.sello {
+    margin-left: 180px !important;
+    
+}
