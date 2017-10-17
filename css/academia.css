@@ -301,6 +301,11 @@ a.p-emprender:hover, a.p-emprender:focus {
     padding: 4px !important;
 }
 
+img.sello {
+    position:absolute;
+    right: 15px !important;
+}
+
 /*media queries*/
 
 /* Medium Devices, Desktops */
@@ -487,17 +492,14 @@ td .progress, td .btn {
 }
 
 
+
+
 .label {
     padding: 5px;
     min-width: 70px !important;
     display: inline-block !important
 }
 
-.panel-charlas .panel-heading {
-    
-}
 
-img.sello {
-    margin-left: 180px !important;
-    
-}
+
+
