@@ -250,8 +250,7 @@ a.p-emprender:hover, a.p-emprender:focus {
 }
 
 
-.academia-login input[type=checkbox]
-        {
+.academia-login input[type=checkbox]{
         /* Double-sized Checkboxes */
             -ms-transform: scale(2); /* IE */
             -moz-transform: scale(2); /* FF */
@@ -263,10 +262,10 @@ a.p-emprender:hover, a.p-emprender:focus {
     		margin-left: auto;
         }
 
-.img-resultados {
+.panel-alto {
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height:200px;
+	min-height:200px !important;
 	position: relative;
 }
 
@@ -298,12 +297,14 @@ a.p-emprender:hover, a.p-emprender:focus {
 }
 
 .etiqueta span {
-    padding: 4px !important;
+    padding: 3px 4px !important;
 }
 
 img.sello {
     position:absolute;
     right: 15px !important;
+    height:40px;
+    width:40px;
 }
 
 /*media queries*/
@@ -325,6 +326,7 @@ img.sello {
 }
 
 }
+
 
 
 /*TEST*/
@@ -379,7 +381,6 @@ img.sello {
     padding: 14px 25px;
     text-transform: capitalize;
     font-weight: bold;
-    
     border-radius: 4px 4px 4px 4px;
     -moz-border-radius: 4px 4px 4px 4px;
     -webkit-border-radius: 4px 4px 4px 4px;
@@ -492,14 +493,27 @@ td .progress, td .btn {
 }
 
 
-
-
 .label {
     padding: 5px;
     min-width: 70px !important;
     display: inline-block !important
 }
 
+ul.dropdown-menu {
+    width:100% !important;
+    text-align: center;
+}
 
+
+
+/*  */
+@media only screen and (max-width : 992px) {
+
+ul.dropdown-menu li a {
+    
+    text-align: left !important;
+}
+
+}
 
 
