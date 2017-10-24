@@ -307,6 +307,68 @@ img.sello {
     width:40px;
 }
 
+
+.jumbotron-curso .jumbotron_body {
+    padding:20px;
+}
+
+.form-azul .panel-heading {
+  min-height:auto !important;
+}
+
+.form-azul .progress {
+    overflow: visible;
+}
+
+.nodo {
+    position:absolute;
+    bottom:22px;
+    height:22px;
+    width:22px;
+    border-radius: 50%;
+    background-color:#337ab7;
+    display:inline-block;
+    z-index:300;
+}
+
+.nodo-texto {
+    position:relative;
+    height:20px;
+}
+
+.nodo-texto span {
+    position:absolute;
+    bottom:12px;
+}
+
+/*ALINEADOR*/
+
+.alinear {
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+}
+
+.alinear-item {
+  max-width: 50%;
+}
+
+.alinear-item--top {
+  align-self: flex-start;
+}
+
+.alinear-item--bottom {
+  align-self: flex-end;
+}
+
+/*INVISIBLE*/
+
+.invisible {
+    visibility:hidden;
+}
+
+
+
 /*media queries*/
 
 /* Medium Devices, Desktops */
@@ -326,7 +388,6 @@ img.sello {
 }
 
 }
-
 
 
 /*TEST*/
