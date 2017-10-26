@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>dashboard editar proyecto</title>
+    <title>IndicacionesTema3</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     
@@ -13,6 +13,23 @@
     
     <!-- FORMULARIO -->
     
+    <!-- iCheck -->
+    <link href="plugins/iCheck/all.css" rel="stylesheet">
+    
+    <!-- BOOTSTRAP-Tags Input files -->
+    <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/dist/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="plugins/bootstrap-tagsinput-latest/examples/assets/app.css">
+    
+    <!-- BOOTSTRAP-FULLSCREEN-SELECT files -->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-fullscreen-select/css/bootstrap-fullscreen-select.css">
+    
+    <!-- BOOTSTRAP-Choosen Autocomplete -->
+    <link rel="stylesheet" href="plugins/bootstrap-chosen-master/bootstrap-chosen.css">
+    <!-- BOOTSTRAP-Datepicker -->
+    <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
+    
+    <!-- DATE-RANGE PICKER -->
+    <link href="plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -22,20 +39,22 @@
     
     <!-- IONICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-
-   
+    
+    <!-- FULL CALENDAR 2.2.5-->
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css" media="print">
+    <!-- Theme style -->
+    
     <!-- PALTA dist-palta -->
     <link rel="stylesheet" href="css/poncho.min.css">
-    
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="css/palta.css">
-
     <link rel="stylesheet" href="css/academia.css">
   
 </head>
 <body>
 
-<header>
+    <header>
     <nav class="navbar navbar-top navbar-default" role="navigation">
       <div class="container-fluid">
         <div>
@@ -70,7 +89,7 @@
                 </li>                            
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CAPACITACIONES <span class="caret"></span></a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu pull-left">
                   <li><a href="IndicacionesCursos.html">CURSOS</a>
                   </li>
                   <li><a href="IndicacionesCharlas.html">CHARLAS</a>
@@ -153,121 +172,207 @@
             </form>
           </li>
         </ul> <!-- FIN navbar SIEMPRE EN VISTA -->
+
       </div>
     </div> <!-- container -->
 
   </nav>
 </header>
 
-    <main role="main" class="bg-white">
-        <section class="content-header container" style="padding: 0 15px;"><!-- se cambió container por content-header -->
-            <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li class="active">Formador</li>
-            </ol>
-            <h1>Formador</h1>
-        </section>    
-    
-        <section class="bg-white p-t-0">
-        	<div class="container">
-            	<div class="row">
-                	<div class="col-md-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading panel-heading-title bg-primary text-white text-left">
-                                <h4>Lorem Ipsum</h4>
-                            </div>
-                            <div class="panel-body">
-                                <div class="col-lg-2 col-md-3 col-sm-4">
-                                	<img src="img/img_profile.jpg" class="img-circle width100" alt="">
-                                </div>                
-                                <div class="col-lg-10 col-md-9 col-sm-8">
-                                	<h2>Pepito Perez</h2>
-                                    <h4>Tecnología-IT</h4>
-                                	<p>Lorem donec massa sapien faucibus et molestie. Diam donec adipiscing tristique risus nec feugiat in fermentum. Mattis rhoncus urna neque viverra justo nec. Netus et malesuada fames ac turpis egestas integer. Elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue. Sit amet risus nullam eget felis eget. In metus vulputate eu scelerisque felis imperdiet proin fermentum. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Lacinia at quis risus sed vulputate odio ut enim blandit. Vel quam elementum pulvinar etiam non quam. Habitasse platea dictumst vestibulum rhoncus est pellentesque.</p>
-                                    
-                                  <h4 class="m-t-2">ESPECIALIDAD:</h4>
-                                  <a href="">Administración-Financiamiento</a>
-                                  <h4 class="m-t-2">CONTACTO</h4>
-                                  <span class="" style="font-size: 30px;">
-                                    <a href="" style="color:#767676;"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                                    <a href="" style="color:#767676;"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                                    <a href="" style="color:#767676;"><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                                  </span>
-                                </div>                                
-                            </div>
-                        </div>                    
-                    </div>
-                </div>
+    <main>
+        <section class="jumbotron bg-rojo" style="">
+        <div class="jumbotron_body">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
+                <h1>Comercialización</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl. Fusce lorem sem, vehicula sed pellentesque </p></div>
+              </div>
             </div>
-        </section>
-        
-        
-        <section class="container p-t-0">                                
-          <section class="col-lg-9 col-md-8 col-xs-12 academia-paneles paneles-charlas p-t-0" id="primero">
-                <h2 class="m-b-2">Sus Charlas</h2>
+          </div>
+          </section>
+
+    <div class="container visible-sm visible-xs">
+      <div class="col-xs-4 text-left m-t-1 p-x-0">
+          <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#academia-filtros">Filtrar
+          </button>
+      </div>
+    </div>          
+
+          <div class="container"> <!-- CONTENEDOR -->
+
+        <section id="primero" class="col-lg-9 col-md-8 col-xs-12 academia-paneles">
             <div class="row panels-row">
+
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <a class="panel panel-default panel-icon panel-secondary" href="##">
-                  <div class="panel-heading panelIcono panel-alto" style="background-image: url(img/06-caratulas-charlas_acuña.jpg);">
+                  <div class="panel-heading panelIcono" style="background-image: url(img/caratulas-cursos-01.png);">
+                    
+                  </div>
+                  <div class="panel-body text-left">
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
+                    <h3>Lorem Ipsum</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="panel panel-default panel-icon panel-secondary" href="##">
+                  <div class="panel-heading panelIcono" style="background-image: url(img/caratulas-cursos-01.png);">
+                    
+                  </div>
+                  <div class="panel-body text-left">
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
+                    <h3>Lorem Ipsum</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="panel panel-default panel-icon panel-secondary" href="##">
+                  <div class="panel-heading panelIcono" style="background-image: url(img/caratulas-cursos-01.png);">
+                    
+                  </div>
+                  <div class="panel-body text-left">
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
+                    <h3>Lorem Ipsum</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="panel panel-default panel-icon panel-secondary" href="##">
+                  <div class="panel-heading panelIcono panel-alto" style="background-image: url(img/14-caratulas-charlas_borda.jpg);">
                     <span class="etiqueta etiqueta-sobre">
                       <span>RECOMENDADA</span>
                     </span>
                     <!-- <img class="sello" src="img/AP-iconos_comercioExterior2.png"> --> 
                   </div>
                   <div class="panel-body text-left">
-                    <p class="text-lila"><strong>Comercio Exterior</strong></p>
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
                     <h3>¿Qué son los Objetos?</h3>
                     <p class="text-muted m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
                     <small><strong>Juana Molina</strong></small>
                   </div>
                 </a>
               </div>
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <a class="panel panel-default panel-icon panel-secondary" href="##">
-                  <div class="panel-heading panelIcono panel-alto" style="background-image: url(img/17-caratulas-charlas_bonini.jpg);">
-                    <span class="etiqueta etiqueta-sobre">
-                      <span>NUEVO</span>
-                    </span>
-                    <!-- <img class="sello" src="img/AP-iconos_tecnologia2.png"> -->
-                  </div>
-                  <div class="panel-body text-left">
-                  <p class="text-naranja"><strong>Tecnología</strong></p>
-                    <h3>Un nuevo paradigma</h3>
-                    <p class="text-muted m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
-                    <small><strong>Juan Alberto Bahía</strong></small>
-                  </div>
-                </a>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-4">
-                <a class="panel panel-default panel-icon panel-secondary" href="##">
-                  <div class="panel-heading panelIcono panel-alto" style="background-image: url(img/05-caratulas-charlas_caramutti.jpg);">
-                    <span class="etiqueta etiqueta-sobre ">
-                      <i class="fa fa-calendar" aria-hidden="true"></i>
-                      <span>AGENDÁ</span>
-                      <!-- etiqueta gris de fecha --> 
-                      <span class="etiqueta-gris"><small>28/08 | 10.00 hs</small></span>
-                    </span>
-                    <!-- <img class="sello" src="img/AP-iconos_recursosHumanos2.png">  -->
-                  </div>
-                  
-                  <div class="panel-body text-left">
-                    <p class="text-info"><strong>Recursos Humanos</strong></p>
-                    <h3>Conducción y liderazgo de personas</h3>
-                    <p class="text-muted m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt nulla, nec porta nisl.</p>
-                    <small><strong>Juan Carlos Carlitos</strong></small>
-                  </div>
-                </a>
-              </div>
-            </div>
 
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="panel panel-default panel-icon panel-secondary" href="##">
+                  <div class="panel-heading panelIcono panel-alto" style="background-image: url(img/14-caratulas-charlas_borda.jpg);">
+                    <span class="etiqueta etiqueta-sobre">
+                      <span>RECOMENDADA</span>
+                    </span>
+                    <!-- <img class="sello" src="img/AP-iconos_comercioExterior2.png"> --> 
+                  </div>
+                  <div class="panel-body text-left">
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
+                    <h3>¿Qué son los Objetos?</h3>
+                    <p class="text-muted m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
+                    <small><strong>Juana Molina</strong></small>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="panel panel-default panel-icon panel-secondary" href="##">
+                  <div class="panel-heading panelIcono panel-alto" style="background-image: url(img/14-caratulas-charlas_borda.jpg);">
+                    <span class="etiqueta etiqueta-sobre">
+                      <span>RECOMENDADA</span>
+                    </span>
+                    <!-- <img class="sello" src="img/AP-iconos_comercioExterior2.png"> --> 
+                  </div>
+                  <div class="panel-body text-left">
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
+                    <h3>¿Qué son los Objetos?</h3>
+                    <p class="text-muted m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
+                    <small><strong>Juana Molina</strong></small>
+                  </div>
+                </a>
+              </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="panel panel-default panel-icon panel-secondary" href="IndicacionesTipsDentro1.html">
+                  <div class="panel-heading panelIcono" style="background-image: url(img/panel-ej.jpg);">
+                    
+                  </div>
+                  <div class="panel-body text-left">
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
+                    <h3>Lorem Ipsum</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="panel panel-default panel-icon panel-secondary" href="IndicacionesTipsDentro2.html">
+                  <div class="panel-heading panelIcono" style="background-image: url(img/panel-ej.jpg);">
+                    
+                  </div>
+                  <div class="panel-body text-left">
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
+                    <h3>Lorem Ipsum</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <a class="panel panel-default panel-icon panel-secondary" href="IndicacionesTipsDentro1.html">
+                  <div class="panel-heading panelIcono " style="background-image: url(img/panel-ej.jpg);">
+                    
+                  </div>
+                  <div class="panel-body text-left">
+                    <p class="text-rojo"><strong>Comercialización</strong></p>
+                    <h3>Lorem Ipsum</h3>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis tincidunt nulla, nec porta nisl.</p>
+                  </div>
+                </a>
+              </div>
+
+            <div class="col-sm-10 aligner col-sm-offset-1">
+                          <div class="" id="">
+                            <ul class="center-block pagination">
+                              <li class="paginate_button previous disabled" id=""><a href="#" aria-controls="" data-dt-idx="0" tabindex="0">&lt;</a></li>
+                              <li class="paginate_button active"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">1</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">2</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">3</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">4</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">5</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">6</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">7</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">8</a></li>
+                              <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">9</a></li>
+                              <li class="paginate_button" id=""><a href="#" aria-controls="" data-dt-idx="2" tabindex="0">&gt;</a></li>
+                            </ul>
+                          </div>
+                        </div>
         </section>
 
-        <section class="col-lg-3 col-md-4 col-xs-12 academia-filtros p-r-0 p-t-0" id="academia-filtros">
+        <section class="col-lg-3 col-md-4 col-xs-12 academia-filtros p-r-0" id="academia-filtros">
 
           
             <h4>FILTROS</h4>
-            
+            <div class="col-md-11 col-md-offset-1 text-primary academia-checklist m-b-2">
 
+              <div class="row">
+                <span class="p-l-2">Cursos</span>
+                <label class="pull-right checkbox-inline"><input type="checkbox" value=""></label>
+              </div>
+              <div class="row">
+                <span class="p-l-2">Charlas</span>
+                <label class="pull-right checkbox-inline"><input type="checkbox" value=""></label>
+              </div>
+              <div class="row">
+                <span class="p-l-2">Foros</span>
+                <label class="pull-right checkbox-inline"><input type="checkbox" value=""></label>
+              </div>
+              <div class="row">
+                <span class="p-l-2">Tips</span>
+                <label class="pull-right checkbox-inline"><input type="checkbox" value=""></label>
+              </div>
+            </div>
             <h4 class="text-gris">Ordenar por</h4>
               <div class="col-md-11 col-md-offset-1 text-primary p-x-0 m-b-2">
               
@@ -278,50 +383,111 @@
                     <li><a class="p-l-2">Recomendado</a></li>
                   </ul>
             </div>
-            
-
-
-        </section>
-
-                    <!--
-                    <div id="" align="center">
-                        <ul class="pagination">
-                            <li class="paginate_button previous disabled" id=""><a href="#" aria-controls="" data-dt-idx="0" tabindex="0">&lt;</a>
-                            </li>
-                            <li class="paginate_button active"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">1</a>
-                            </li>
-                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">2</a>
-                            </li>
-                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">3</a>
-                            </li>
-                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">4</a>
-                            </li>
-                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">5</a>
-                            </li>
-                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">6</a>
-                            </li>
-                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">7</a>
-                            </li>
-                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">8</a>
-                            </li>
-                            <li class="paginate_button"><a href="#" aria-controls="" data-dt-idx="1" tabindex="0">9</a>
-                            </li>
-                            <li class="paginate_button" id=""><a href="#" aria-controls="" data-dt-idx="2" tabindex="0">&gt;</a>
-                            </li>
-                        </ul>
-                    </div>
+            <h4 class="text-gris">Temas</h4>
+            <div class="col-md-11 col-md-offset-1 text-primary p-x-0 m-b-2">
+              
+                  <ul class="nav nav-pills nav-stacked">
                     
-                    <div class="clearfix"></div>
-                    -->
-
-                </div>
-    
+                    <li class="active">
+                      <a>
+                        <i class="fa fa-circle" style="visibility: hidden;" aria-hidden="true"></i>
+                        <span>Todas</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-manzana" aria-hidden="true"></i>
+                        <span>Financiamiento</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-lila" aria-hidden="true"></i>
+                        <span>Comercio Exterior</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-success" aria-hidden="true"></i>
+                        <span>Medio Ambiente</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-info" aria-hidden="true"></i>
+                        <span>Calidad</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-verde" aria-hidden="true"></i>
+                        <span>Seguridad</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-rojo" aria-hidden="true"></i>
+                        <span>Comercialización</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-primary" aria-hidden="true"></i>
+                        <span>Recursos Humanos</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-violeta-2" aria-hidden="true"></i>
+                        <span>Administración</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-borgoña" aria-hidden="true"></i>
+                        <span>Producción</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-naranja" aria-hidden="true"></i>
+                        <span>Tecnología</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-celeste" aria-hidden="true"></i>
+                        <span>Marco Regulatorio</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="">
+                        <i class="fa fa-circle text-warning" aria-hidden="true"></i>
+                        <span>Emprender</span>
+                        <span class="pull-right v-middle">10</span>
+                      </a>
+                    </li>
+                  </ul>
             </div>
+
+
         </section>
 
+        </div> <!-- Fin Contenedor -->
     </main>
     
-
     <!--position:fixed; bottom:-10px; width:100%; padding-top:40px;-->
     <footer class="main-footer">
         <div class="container">
@@ -333,15 +499,16 @@
                 </div>
                 <div class="col-md-3 col-sm-6 m-t-1">
                     <div id="nav_menu-3" class="widget_nav_menu"><div class="menu-footer-b-container">
-                    <ul id="menu-footer-b" class="menu"><li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="http://www.produccion.gob.ar/institucional/mision/">Institucional</a></li>
-                      <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="http://www.produccion.gob.ar/guia-de-tramites/">Trámites</a></li>
-                      <li id="menu-item-154" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-154"><a href="http://www.produccion.gob.ar/mundopyme/">Mundo PyME</a></li>
-                      </ul></div></div>      </div>
+                    <ul id="menu-footer-b" class="menu"><li id="menu-item-152" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-152"><a href="">Términos y condiciones</a></li>
+                      <li id="menu-item-153" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-153"><a href="">Bases del programa</a></li>
+                      
+                      
+                            </ul></div></div>      </div>
                 <div class="col-md-3 col-sm-6 m-t-1">
-                    <div id="nav_menu-2" class="widget_nav_menu"><div class="menu-footer-a-container"><ul id="menu-footer-a" class="menu"><li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="http://dna2-tests.produccion.gob.ar/digitalizacion/digitalizacionPyME/">Plan de digitalización</a></li>
-                    <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http://dna2-tests.produccion.gob.ar/digitalizacion/digitalizacionPyME/tyc">Términos y condiciones</a></li>
-                    <li id="menu-item-148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="http://dna2-tests.produccion.gob.ar/digitalizacion/digitalizacionPyME/ayuda">Preguntas Frecuentes</a></li>
-                    </ul></div></div>
+                    <div id="nav_menu-2" class="widget_nav_menu"><div class="menu-footer-a-container"><ul id="menu-footer-a" class="menu"><li id="menu-item-150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-150"><a href="">Preguntas frecuentes</a></li>
+                    <li id="menu-item-151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-151"><a href="">Suscribirte al newsletter</a></li>
+                    
+                            </ul></div></div>
                 </div>
             </div>
         </div>
@@ -586,6 +753,24 @@
 <script src="plugins/iCheck/icheck.min.js"></script>
 <!-- Page Script -->
 
+<script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />'); 
+            else $('head > link').filter(':first').replaceWith(defaultCSS); 
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height()); 
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+</script>
+
+
+
+
+
+
 
 <!-- FORMS -->
 
@@ -600,6 +785,34 @@
 <!-- Datepicker -->
 <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
 <script src="plugins/datepicker/locales/bootstrap-datepicker.es.js"></script>
+
+<script type="text/javascript">
+  $(".academia-filtros .nav-pills li a").click(function() {
+    $(this).parent().addClass('active').siblings().removeClass('active');
+
+    });
+</script>
+
+<script type="text/javascript">  
+$(window).resize(function() {
+    var responsive_viewport = $(window).width();
+    if (responsive_viewport < 992) {             
+        $('#academia-filtros').after($('#primero'))
+    }
+    else {
+        $('#primero').after($('#academia-filtros')) 
+    }
+})
+</script>
+
+<script type="text/javascript">
+  if ($(window).width() < 992) {
+ $('#academia-filtros').after($('#primero'))
+    }
+    else {
+        $('#primero').after($('#academia-filtros')) 
+    }
+</script>
 
 </body>
 </html>

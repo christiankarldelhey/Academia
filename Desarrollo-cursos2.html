@@ -90,7 +90,7 @@
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CAPACITACIONES <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-<li><a href="IndicacionesCursos.html">CURSOS</a>
+                  <li><a href="IndicacionesCursos.html">CURSOS</a>
                   </li>
                   <li><a href="IndicacionesCharlas.html">CHARLAS</a>
                   </li>
@@ -191,27 +191,21 @@
                 <button class="m-t-1 btn btn-success">COMENZAR AHORA</button>
               </div>
 
-              <div class="col-md-4 pull-right">
+              <div class="col-md-4 pull-right hidden-xs hidden-sm">
                 <img style="height:300px; " src="img/caratulas-cursos-01.png">
               </div>
               </div> <!-- row -->
             </div>
           </div>
           </section>
-
-    <div class="container visible-sm visible-xs">
-      <div class="col-xs-4 text-left m-t-1 p-x-0">
-          <button class="btn btn-sm btn-primary" data-toggle="collapse" data-target="#academia-filtros">Filtrar
-          </button>
-      </div>
-    </div>          
+        
 
       <div class="container"> <!-- CONTENEDOR -->
 
       <!-- RESULTADOS -->
 
         <section>
-          <div class="panel panel-default form-azul">
+          <div class="panel panel-default form-azul panel-progress">
             <div class="panel-heading bg-primary text-white">
               <h4>Actividad del curso</h4>
             </div>
@@ -219,34 +213,34 @@
 
               <div class="col-md-9 col-sm-12 col-xs-12 p-x-0" style="margin-top:10px;">
                 <div class="">
-                    <span class="m-b-1">Evolución: <span class="text-primary"><b>17%</b></span></span>
+                    <span class="m-b-1">Evolución: <span class="text-primary"><b>60%</b></span></span>
                     <span class="pull-right"> Última actividad: <span class="text-primary"><b>Ejemplo de curso en formato video</b></span></span>                 
                 </div>
               </div>
 
               <div class="col-md-3 col-sm-12 p-x-0">
-                <button class="btn btn-sm p-x-3 btn-primary pull-right alinear"><i class="fa fa-2x fa-play-circle-o" aria-hidden="true"></i> &emsp;CONTINUAR
-                </button>
+                <a href="Desarrollo-cursos-texto.html"><button class="btn btn-sm p-x-3 btn-primary pull-right alinear"><i class="fa fa-2x fa-play-circle-o" aria-hidden="true"></i> &emsp;CONTINUAR
+                </button></a>
               </div>
 
               <div class="col-md-9 col-sm-12 m-t-0 p-x-0" style="position:relative;">
                 <div class="progress" style="height:6px; margin-bottom:10px;">
-                  <div class="progress-bar"  role="progressbar" aria-valuenow="17"
-                  aria-valuemin="0" aria-valuemax="100" style="width:17%;" >
-                    <span class="sr-only">17% Complete</span>
+                  <div class="progress-bar"  role="progressbar" aria-valuenow="60"
+                  aria-valuemin="0" aria-valuemax="100" style="width:60%;" >
+                    <span class="sr-only">60% Complete</span>
                   </div>
                 </div>
-                <div class="nodo" style="left:0%;">
+                <div class="nodo nodo-0" style="left:-1%;"> <!-- principio de curso -->
                 </div>
-                <div class="nodo" style="left:50%;">
+                <div class="nodo nodo-50" style="left:50%;"> <!-- mitad de curso -->
                 </div>
-                <div class="nodo" style="left:100%;">
+                <div class="nodo nodo-100" style="left:99%;"> <!-- final de curso -->
                 </div>
                 <div class="nodo-texto" style="left:95%;">
                 </div>
               </div> <!-- col-9 -->
 
-              <div class="col-md-10 col-sm-12 p-x-0 nodo-texto">
+              <div class="col-md-10 col-sm-12 p-x-0 nodo-texto hidden-xs ">
                   <span class="text-primary" style="left:0%;"><b>MÓDULO 1</b></span>
                   <span class="text-primary" style="left:42%;"><b>MÓDULO 2</b></span>
                   <span class="text-primary" style="left:87%;"><b>EVALUACIÓN</b></span>
@@ -271,8 +265,8 @@
                 <i class="fa fa-video-camera" aria-hidden="true"></i>
                 <span>&emsp;Ejemplo de curso en formato de video</span>
                 <div class="pull-right">
-                  <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
-                  </button>
+                  <a href="Desarrollo-cursos-video.html"><button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
+                  </button></a>
                   <i class="fa fa-check text-success" style="font-size:22px; margin-top: 4px;" aria-hidden="true"></i>
                 </div>
               </div>
@@ -281,8 +275,8 @@
                 <i class="fa fa-file-o" aria-hidden="true"></i>
                 <span>&emsp;Ejemplo de curso en formato texto</span>
                 <div class="pull-right">
-                  <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
-                  </button>
+                  <a href="Desarrollo-cursos-texto.html"><button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
+                  </button></a>
                   <i class="fa fa-check text-success" style="font-size:22px; margin-top: 4px;" aria-hidden="true"></i>
                 </div>
               </div>
@@ -291,8 +285,8 @@
                 <i class="fa fa-picture-o" aria-hidden="true"></i>
                 <span>&emsp;Ejemplo de curso en formato slides</span>
                 <div class="pull-right">
-                  <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
-                  </button>
+                  <a href="Desarrollo-cursos-texto.html"><button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
+                  </button></a>
                   <i class="fa fa-check text-success"  style="font-size:22px; margin-top: 4px;" aria-hidden="true"></i>
                 </div>
               </div>
@@ -310,8 +304,8 @@
                 <i class="fa fa-video-camera" aria-hidden="true"></i>
                 <span>&emsp;Ejemplo de curso en formato de video</span>
                 <div class="pull-right">
-                  <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
-                  </button>
+                  <a href="Desarrollo-cursos-video.html"><button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
+                  </button></a>
                   <i class="fa fa-check text-success" style="font-size:22px; margin-top: 4px;" aria-hidden="true"></i>
                 </div>
               </div>
@@ -320,8 +314,8 @@
                 <i class="fa fa-file-o" aria-hidden="true"></i>
                 <span>&emsp;Ejemplo de curso en formato texto</span>
                 <div class="pull-right">
-                  <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
-                  </button>
+                  <a href="Desarrollo-cursos-texto.html"><button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
+                  </button></a>
                   <i class="fa fa-check text-success invisible" style="font-size:22px; margin-top: 4px;" aria-hidden="true"></i>
                 </div>
               </div>
@@ -330,8 +324,8 @@
                 <i class="fa fa-picture-o" aria-hidden="true"></i>
                 <span>&emsp;Ejemplo de curso en formato slides</span>
                 <div class="pull-right">
-                  <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
-                  </button>
+                  <a href="Desarrollo-cursos-texto.html"><button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
+                  </button></a>
                   <i class="fa fa-check text-success invisible"  style="font-size:22px; margin-top: 4px;" aria-hidden="true"></i>
                 </div>
               </div>
@@ -341,8 +335,8 @@
                 <i class="fa fa-check-square-o" aria-hidden="true"></i>
                 <span>&emsp;Ejemplo de evaluación</span>
                 <div class="pull-right">
-                  <button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
-                  </button>
+                  <a href="Desarrollo-cursos-evaluacion.html"><button class="btn btn-sm btn-primary"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&emsp;IR
+                  </button></a>
                   <i class="fa fa-check text-success invisible"  style="font-size:22px; margin-top: 4px;" aria-hidden="true"></i>
                 </div>
               </div>
@@ -422,7 +416,7 @@
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a href="">Ver Bio</a>
+            <a href="miperfil3.html">Ver Bio</a>
         </section>
 
         </div> <!-- Fin Contenedor -->

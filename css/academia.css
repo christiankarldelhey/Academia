@@ -22,6 +22,10 @@
 
 /*PALETA DE COLORES DE ACADEMIA*/
 
+.text-white {
+    color:white !important;
+}
+
 
 /*Financiamiento*/
 .bg-manzana  {
@@ -80,7 +84,7 @@ a.p-seguridad:hover, a.p-seguridad:focus {
 
 /*Comercializacion*/
 .bg-rojo {
-background-color: #D14845;
+background-color: #D14845 !important;
 }
 
 .text-rojo {
@@ -316,8 +320,18 @@ img.sello {
   min-height:auto !important;
 }
 
+/*BARRA DE PROGRESO CURSO*/
+
 .form-azul .progress {
     overflow: visible;
+}
+
+.progress-bar {
+    float:none;
+}
+
+.panel-progress .panel-body {
+    padding: 15px 35px !important;
 }
 
 .nodo {
@@ -518,6 +532,17 @@ td .progress, td .btn {
 	header form .search-input {
 		margin-left:0px !important;
 	}
+
+}
+
+@media (max-width: 480px) {
+    
+    .nodo-0 {
+        left:-5% !important;
+    }
+    .nodo-100 {
+        left:95% !important;
+    }
 
 }
 
