@@ -35,9 +35,9 @@
 	color: #C8D171 !important;
 }
 
-a.p-finanzas:hover, a.p-finanzas:focus {
+a.p-finanzas:hover, a.p-finanzas:focus, a.p-finanzas:hover strong, a.p-finanzas:focus strong{
     background: #C8D171;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*Comercio exterior*/
@@ -48,24 +48,24 @@ a.p-finanzas:hover, a.p-finanzas:focus {
 	color: #A294B9 !important;
 }
 
-a.p-comercio-exterior:hover, a.p-comercio-exterior:focus {
+a.p-comercio-exterior:hover, a.p-comercio-exterior:focus, a.p-comercio-exterior:hover strong, a.p-comercio-exterior:focus strong{
     background: #A294B9;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*Medio Ambiente - 
 Usar bg-success
 */
-a.p-medio-ambiente:hover, a.p-medio-ambiente:focus {
+a.p-medio-ambiente:hover, a.p-medio-ambiente:focus, a.p-medio-ambiente:hover strong, a.p-medio-ambiente:focus strong {
     background: #3c763d;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*Calidad - 
 Usar bg-info*/
-a.p-calidad:hover, a.p-calidad:focus {
+a.p-calidad:hover, a.p-calidad:focus, a.p-calidad:hover strong, a.p-calidad:focus strong{
     background: #d9edf7;
-    color: #fff;
+    color: #fff !important;
 }
 
 
@@ -77,9 +77,9 @@ a.p-calidad:hover, a.p-calidad:focus {
 	color: #37895b !important;
 }
 
-a.p-seguridad:hover, a.p-seguridad:focus {
+a.p-seguridad:hover, a.p-seguridad:focus, a.p-seguridad:hover strong, a.p-seguridad:focus strong {
     background: #37895b;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*Comercializacion*/
@@ -91,10 +91,12 @@ background-color: #D14845 !important;
 	color: #D14845;
 }
 
-a.p-comercializacion:hover, a.p-comercializacion:focus {
+a.p-comercializacion:hover, a.p-comercializacion:focus, a.p-comercializacion:hover strong, a.p-comercializacion:focus strong {
     background: #D14845;
-    color: #fff;
+    color: #fff !important;
 }
+
+
 
 /*Recursos Humanos - 
 Usar bg-primary*/
@@ -108,9 +110,9 @@ Usar bg-primary*/
 	color: #79528D !important;
 }
 
-a.p-administracion:hover, a.p-administracion:focus {
+a.p-administracion:hover, a.p-administracion:focus, a.p-administracion:hover strong, a.p-administracion:focus strong {
     background: #79528D;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*Produccion*/
@@ -121,9 +123,9 @@ a.p-administracion:hover, a.p-administracion:focus {
 	color: #89325E !important;
 }
 
-a.p-produccion:hover, a.p-produccion:focus {
+a.p-produccion:hover, a.p-produccion:focus, a.p-produccion:hover strong, a.p-produccion:focus strong{
     background: #89325E;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*Tecnologia*/
@@ -134,9 +136,9 @@ a.p-produccion:hover, a.p-produccion:focus {
 	color: #f57539 !important;
 }
 
-a.p-tecnologia:hover, a.p-tecnologia:focus {
+a.p-tecnologia:hover, a.p-tecnologia:focus, a.p-tecnologia:hover strong, a.p-tecnologia:focus strong{
     background: #f57539;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*Marco regulatorio*/
@@ -147,17 +149,23 @@ a.p-tecnologia:hover, a.p-tecnologia:focus {
 	color: #79c7ec !important;
 }
 
-a.p-marco-regulatorio:hover, a.p-marco-regulatorio:focus {
+a.p-marco-regulatorio:hover, a.p-marco-regulatorio:focus, a.p-marco-regulatorio:hover strong, a.p-marco-regulatorio:focus strong {
     background: #79c7ec;
-    color: #fff;
+    color: #fff !important;
 }
 
 /*Emprender - 
 Usar bg-warning*/
-a.p-emprender:hover, a.p-emprender:focus {
+a.p-emprender:hover, a.p-emprender:focus, a.p-emprender:hover strong, a.p-emprender:focus strong {
     background: #8a6d3b;
-    color: #fff;
+    color: #fff !important;
 }
+
+
+
+
+
+
 
 
 .text-gris {
@@ -266,7 +274,7 @@ a.p-emprender:hover, a.p-emprender:focus {
     		margin-left: auto;
         }
 
-.panel-alto {
+.panel-icon, .panelIcono {
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height:200px !important;
@@ -601,5 +609,7 @@ ul.dropdown-menu li a {
 }
 
 }
+
+
 
 
