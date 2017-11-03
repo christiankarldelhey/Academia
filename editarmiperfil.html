@@ -175,8 +175,8 @@
                                             <label class="control-label" for="txtxxx">Género <span class="requiredField">*</span></label>
                                             <div class="input-group m-b-2 width100">
                                                 <div id="generoBtn" class="btn-group width100">
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="1" style="width:50%;">Masculino</span>
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="2" style="width:50%;">Femenino</span>
+                                                    <span class="btn btn-default" data-toggle="estado" data-value="1" style="width:50%; border-right:1px blackx;">Masculino</span>
+                                                    <span class="btn btn-default active" data-toggle="estado" data-value="2" style="width:50%;">Femenino</span>
                                                 </div>
                                                 <input type="hidden" name="genero" id="genero" value="Y">
                                             </div>  
@@ -218,6 +218,31 @@
                                                 <input class="form-control" id="" type="email" value="">
                                             </div>
                                         </div>
+
+                                        <div class="col-md-12">
+                                            <a href="#mod-con"  data-toggle="collapse"><button class="btn btn-sm btn-primary">Modificar contraseña</button></a>
+                                        </div>
+
+                                        <div id="mod-con" class="collapse m-b-1">
+                                            <div class="col-md-12" id="">
+                                                <div class="form-group">
+                                                    <label class="control-label">Contraseña actual</label> 
+                                                    <input class="form-control" id="" type="email" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12" id="">
+                                                <div class="form-group">
+                                                    <label class="control-label">Nueva contraseña</label> 
+                                                    <input class="form-control" id="" type="email" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12" id="">
+                                                <div class="form-group">
+                                                    <label class="control-label">Repetir nueva contraseña</label> 
+                                                    <input class="form-control" id="" type="email" value="">
+                                                </div>
+                                            </div>
+                                        </div>
                              
                                         <p class="m-t-1 col-lg-12"><small>* Campo obligatorio</small></p>
                                         <div align="center" class="text-center col-md-12 m-t-1 m-b-2">
@@ -253,17 +278,24 @@
                                         </div>
                                         <div class="col-md-12">
                                             <label class="control-label" for="txtxxx">¿Cuál es tu relación con la empresa? <span class="requiredField">*</span></label>
-                                            <div class="input-group m-b-2 width100">
-                                                <div id="radioBtn" class="btn-group width100">
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="1" style="width:30%; padding: 16px 4px;">Dueño</span>
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="2" style="width:33%; padding: 16px 4px;">Familiar</span>
-                                                    <span class="btn btn-default" data-toggle="estado" data-value="3" style="width:37%; padding: 16px 6px;">Empleado</span>
-                                                </div>
-                                                <input type="hidden" name="estado" id="estado" value="Y">
-                                            </div>                        
-                                        </div>   
-                                        <div class="col-md-12">
-                                            <div class="form-group">
+                                            <div class="academia-checklist m-b-2">
+                                              <div class="row">
+                                                <label class="pull-right checkbox-inline"><input type="checkbox" id="dueño" value=""></label>
+                                                <span class="p-l-2">Dueño</span>
+                                                
+                                            </div>
+                                            <div class="row">
+                                                <span class="p-l-2">Familiar</span>
+                                                <label class="pull-right checkbox-inline"><input type="checkbox" value=""></label>
+                                            </div>
+                                            <div class="row">
+                                                <span class="p-l-2">Empleado</span>
+                                                <label class="pull-right checkbox-inline"><input type="checkbox" id="empleado" value=""></label>
+                                            </div>
+                                        </div>  
+                                    </div>   
+                                    <div class="col-md-12">
+                                        <div class="form-group">
                                                 <label class="control-label">¿Cuál es tu función en la empresa? *</label> 
                                                 <textarea class="form-control" cols="4" type="text" value=""></textarea>
                                             </div>
@@ -305,10 +337,11 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                                        <i class="fa fa-linkedin fa-2x"></i>
+                                                    <div class="input-group-addon bg-primary">
+                                                        <i class="fa fa-linkedin fa-2x" style="padding-left:7px; padding-right:7px;"></i>
                                                     </div>
-                                                    <input type="text" id="face" name="face" class="form-control pull-right">
+                                                    <span class="input-group-addon redes-addon text-muted">linkedin.com/</span>
+                                                    <input type="text" id="face" name="face" class="form-control pull-right"  style="border-left:none;">
                                                 </div>
                                                 <!-- /.input group -->
                                             </div>
@@ -316,10 +349,11 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                                        <i class="fa fa-facebook fa-2x" style="padding:6px 4px;"></i>
+                                                    <div class="input-group-addon bg-primary">
+                                                        <i class="fa fa-facebook fa-2x" style="padding-left:11px; padding-right:11px;"></i>
                                                     </div>
-                                                    <input type="text" id="face" name="face" class="form-control pull-right">
+                                                    <span class="input-group-addon redes-addon text-muted">facebook.com/</span>
+                                                    <input id="face" name="face" class="form-control" style="border-left:none;">
                                                 </div>
                                                 <!-- /.input group -->
                                             </div>
@@ -327,10 +361,11 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                                        <i class="fa fa-twitter fa-2x"></i>
+                                                    <div class="input-group-addon bg-primary">
+                                                        <i class="fa fa-twitter fa-2x" style="padding-left:6px; padding-right:6px;"></i>
                                                     </div>
-                                                    <input type="text" id="face" name="face" class="form-control pull-right">
+                                                    <span class="input-group-addon redes-addon text-muted">twitter.com/</span>
+                                                    <input type="text" id="face" name="face" class="form-control pull-right "  style="border-left:none;">
                                                 </div>
                                                 <!-- /.input group -->
                                             </div>
@@ -338,10 +373,11 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <div class="input-group-addon bg-primary p-l-2 p-r-2">
-                                                        <i class="fa fa-instagram fa-2x" style="padding:6px 4px;"></i>
+                                                    <div class="input-group-addon bg-primary">
+                                                        <i class="fa fa-instagram fa-2x" style="padding-left:7px; padding-right:7px;"></i>
                                                     </div>
-                                                    <input type="text" id="face" name="face" class="form-control pull-right">
+                                                    <span class="input-group-addon redes-addon text-muted">instagram.com/</span>
+                                                    <input type="text" id="face" name="face" class="form-control pull-right "  style="border-left:none;">
                                                 </div>
                                                 <!-- /.input group -->
                                             </div>
@@ -675,6 +711,32 @@
         $('span[data-toggle="'+tog+'"][data-value="'+sel+'"]').removeClass('notActive btn-default').addClass('active btn-primary');
     });	
 
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('#dueño').on('change', function(){        
+        if($('#dueño:checked').length){
+            $('#empleado').prop('disabled', true);
+            $('#empleado').prop('checked', false);
+            return;
+        }
+        
+        $('#empleado').prop('disabled', false);
+    });
+
+    $('#empleado').on('change', function(){        
+        if($('#empleado:checked').length){
+            $('#dueño').prop('disabled', true);
+            $('#dueño').prop('checked', false);
+            return;
+        }
+        
+        $('#dueño').prop('disabled', false);
+    });
+    
+    
+})
 </script>
 
 <!-- Autocomplete -->

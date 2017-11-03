@@ -289,7 +289,7 @@ a.p-emprender:hover, a.p-emprender:focus, a.p-emprender:hover strong, a.p-empren
 }
 
 .etiqueta-gris {
-    background-color: #C3C3C3;
+    background-color: transparent;
     font-weight: bold;
     padding: 3px !important;
     padding-right:8px !important;
@@ -598,7 +598,15 @@ ul.dropdown-menu {
     text-align: center;
 }
 
-
+.redes-addon {
+    padding-right:0px;
+    background-color: #fff;
+    border-right: none !important;
+    
+    font-size: 18px;
+    text-align: right;
+    /*width:142px !important;*/
+}
 
 /*  */
 @media only screen and (max-width : 992px) {
