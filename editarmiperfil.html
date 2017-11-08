@@ -165,21 +165,37 @@
                                                 <textarea class="form-control" cols="4" type="text" value=""></textarea>
                                             </div>
                                         </div>                                        
-                                        <div class="col-md-4">
+                                        <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="control-label">Edad</label> 
                                                 <input class="form-control"  data-inputmask="&quot;mask&quot;: &quot;99&quot;" data-mask="" value="">
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
-                                            <label class="control-label" for="txtxxx">Género <span class="requiredField">*</span></label>
+
+
+                                        <div class="col-md-12 m-b-2">
+                                            <!-- <label class="control-label" for="txtxxx">Género <span class="requiredField">*</span></label>
                                             <div class="input-group m-b-2 width100">
                                                 <div id="generoBtn" class="btn-group width100">
                                                     <span class="btn btn-default" data-toggle="estado" data-value="1" style="width:50%; border-right:1px blackx;">Masculino</span>
                                                     <span class="btn btn-default active" data-toggle="estado" data-value="2" style="width:50%;">Femenino</span>
                                                 </div>
                                                 <input type="hidden" name="genero" id="genero" value="Y">
-                                            </div>  
+                                            </div>  -->
+                                        <label class="control-label" for="txtxxx">Género <span class="requiredField">*</span></label>
+                                            <div class="radio">
+                                              <label><input type="radio" name="optradio">Femenino</label>
+                                            </div>
+                                            <div class="radio">
+                                              <label><input type="radio" name="optradio">Masculino</label>
+                                            </div>
+                                            <div class="radio">
+                                              <label><input type="radio" name="optradio">Otro</label>
+                                            </div>
+                                            <div class="radio">
+                                              <label><input type="radio" name="optradio">Prefiero no decirlo</label>
+                                            </div>
+
                                         </div>    
                                         
                                         <div class="col-md-12 col-xs-12">
@@ -279,21 +295,33 @@
                                         <div class="col-md-12">
                                             <label class="control-label" for="txtxxx">¿Cuál es tu relación con la empresa? <span class="requiredField">*</span></label>
                                             <div class="academia-checklist m-b-2">
-                                              <div class="row">
-                                                <label class="pull-right checkbox-inline"><input type="checkbox" id="dueño" value=""></label>
-                                                <span class="p-l-2">Dueño</span>
+
+                                              <!-- <div class="checkbox">
+                                                <label class="pull-right checkbox-inline"><input type="checkbox" id="dueño" value="">Dueño</label>
+                                                
                                                 
                                             </div>
-                                            <div class="row">
-                                                <span class="p-l-2">Familiar</span>
-                                                <label class="pull-right checkbox-inline"><input type="checkbox" value=""></label>
+                                            <div class="checkbox">
+                                                
+                                                <label class="pull-right checkbox-inline">Familiar<input type="checkbox" value=""></label>
                                             </div>
-                                            <div class="row">
-                                                <span class="p-l-2">Empleado</span>
-                                                <label class="pull-right checkbox-inline"><input type="checkbox" id="empleado" value=""></label>
+                                            <div class="checkbox">
+                                                
+                                                <label class="pull-right checkbox-inline"><input type="checkbox" id="empleado" value="">Empleado</label>
                                             </div>
+                                        </div> -->
+
+                                        <div class="checkbox">
+                                          <label><input type="checkbox" id="dueño" value="">Empleado</label>
+                                        </div>
+                                        <div class="checkbox">
+                                          <label><input type="checkbox" value="">Familiar</label>
+                                        </div>
+                                        <div class="checkbox">
+                                          <label><input type="checkbox" id="empleado" value="">Dueño</label>
                                         </div>  
-                                    </div>   
+                                    </div> 
+                                    </div>  
                                     <div class="col-md-12">
                                         <div class="form-group">
                                                 <label class="control-label">¿Cuál es tu función en la empresa? *</label> 
