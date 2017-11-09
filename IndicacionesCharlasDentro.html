@@ -90,7 +90,7 @@
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CAPACITACIONES <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-<li><a href="IndicacionesCursos.html">CURSOS</a>
+                  <li><a href="IndicacionesCursos.html">CURSOS</a>
                   </li>
                   <li><a href="IndicacionesCharlas.html">CHARLAS</a>
                   </li>
@@ -184,7 +184,8 @@
           <div class="container"> <!-- CONTENEDOR -->
 
         <section class="col-md-9 academia-rrhh">
-            <p class="text-primary">Recursos Humanos</p>
+            <p class="text-primary">
+Equipo de trabajo</p>
             <h3>¿Qué son los objetos?</h3>
             
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -200,11 +201,17 @@
             </div>
           </div>
 
-            <div class="col-xs-12 m-y-1 ">
+          <div class="col-xs-12 m-t-2">
+            <div class="col-xs-6 m-y-1 ">
               <i class="fa fa-heart" aria-hidden="true"></i> <span class="m-r-2">0</span>
               <i class="fa fa-comments" aria-hidden="true"></i> <span class="m-r-2">0</span>
               <i class="fa fa-share-alt" aria-hidden="true"></i> 
             </div>
+
+            <div class="col-xs-6 p-r-0">
+              <button class="btn btn-primary pull-right">DESCARGÁ ESTA PRESENTACIÓN</button>
+            </div>
+          </div>
 
             <div class="row m-t-2">
             <form>
@@ -404,7 +411,7 @@
               </div>
 
               <!-- Modal Ingresá foro-->
-              <div id="myModal3" class="modal fade in" tabindex="-1" role="dialog">
+              <div id="myModal5" class="modal fade in" tabindex="-1" role="dialog">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-body">
@@ -458,7 +465,7 @@
                 </div>
               </div>
 
-              <!-- Modal Ingresá dentro iniciar sesión-->
+               <!-- Modal Ingresá dentro iniciar sesión-->
               <div id="myModal4" class="modal fade in" tabindex="-1" role="dialog">
                 <div class="modal-dialog">
                   <div class="modal-content">
@@ -467,6 +474,117 @@
                         <div class="col-md-12 text-center">
                           <form class="academia-login" method="POST" action="login.php">
                             <h4>Ingresá a la Plataforma</h4>
+                            <div class="col-md-10 col-md-offset-1 m-t-2">
+
+                              <div class="col-xs-12 form-group">
+                                <button class="btn btn-primary btn-login btn-facebook btn-block">
+                                  Iniciar sesión con FACEBOOK
+                                </button>
+                                <button class="btn btn-danger btn-login btn-google btn-block">
+                                  Iniciar sesión con GOOGLE
+                                </button>
+
+                                <p class="m-t-1 m-b-0">Ó</p>
+
+                              </div>
+
+
+                              <div class="form-group col-md-8 col-md-offset-2">
+                                <input class="form-control" placeholder="Email" type="text" name="">
+                              </div>
+                              <div class="form-group col-md-8 col-md-offset-2">
+                                <input class="form-control" placeholder="Contraseña" type="password" name="">
+                              </div>
+
+                              <div class="col-xs-12">
+                                <p><small class="text-muted">Acá va el I´m not a robot (nota para backend)</small></p>
+                              </div>
+
+
+                              <div class="col-xs-12 m-t-2 center-block">
+                                <button type="submit" id="ingresar" class="btn btn-primary btn-login">INICIÁ SESIÓN</button>
+                                <div class="row">
+                                  <a class="m-b-2" href=""><small>¿Olvidaste tu contraseña?</small></a>
+                                </div>
+
+                                <h5 class="m-t-2">¿No tenés una cuenta?</h5>
+                                <button type="submit" id="ingresar" class="btn btn-success btn-login">REGISTRATE</button>
+                              </div>
+
+                            </div>
+                          </form>    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Modal Iniciá sesión para ingresar a Academia PyME-->
+              <div id="myModal3" class="modal fade in" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <form class="academia-login" method="POST" action="login.php">
+                            <h4>Iniciá sesión para ingresar a Academia PyME</h4>
+                            <div class="col-md-10 col-md-offset-1 m-t-2">
+
+                              <div class="col-xs-12 form-group">
+                                <button class="btn btn-primary btn-login btn-facebook btn-block">
+                                  Iniciar sesión con FACEBOOK
+                                </button>
+                                <button class="btn btn-danger btn-login btn-google btn-block">
+                                  Iniciar sesión con GOOGLE
+                                </button>
+
+                                <p class="m-t-1 m-b-0">Ó</p>
+
+                              </div>
+
+
+                              <div class="form-group col-md-8 col-md-offset-2">
+                                <input class="form-control" placeholder="Email" type="text" name="">
+                              </div>
+                              <div class="form-group col-md-8 col-md-offset-2">
+                                <input class="form-control" placeholder="Contraseña" type="password" name="">
+                              </div>
+
+                              <div class="col-xs-12">
+                                <p><small class="text-muted">Acá va el I´m not a robot (nota para backend)</small></p>
+                              </div>
+
+
+                              <div class="col-xs-12 m-t-2 center-block">
+                                <button type="submit" id="ingresar" class="btn btn-primary btn-login">INICIÁ SESIÓN</button>
+                                <div class="row">
+                                  <a class="m-b-2" href=""><small>¿Olvidaste tu contraseña?</small></a>
+                                </div>
+
+                                <h5 class="m-t-2">¿No tenés una cuenta?</h5>
+                                <button type="submit" id="ingresar" class="btn btn-success btn-login">REGISTRATE</button>
+                              </div>
+
+                            </div>
+                          </form>    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal Iniciá sesión para ingresar a Academia PyME-->
+              <div id="myModal3" class="modal fade in" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <form class="academia-login" method="POST" action="login.php">
+                            <h4>Iniciá sesión para ingresar a Academia PyME</h4>
                             <div class="col-md-10 col-md-offset-1 m-t-2">
 
                               <div class="col-xs-12 form-group">
