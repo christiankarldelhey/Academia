@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Desarrollo cursos Exito</title>
+    <title>Desarrollo cursos 2</title>
     <link rel="shortcut icon" href="img/favicon.ico">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     
@@ -90,7 +90,7 @@
                 <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CAPACITACIONES <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="IndicacionesCursos.html">CURSOS</a>
+<li><a href="IndicacionesCursos.html">CURSOS</a>
                   </li>
                   <li><a href="IndicacionesCharlas.html">CHARLAS</a>
                   </li>
@@ -189,7 +189,7 @@
         <section class="p-b-0">
           <div class="panel panel-default form-azul panel-progress">
             <div class="panel-heading bg-rojo">
-              <h4 class="text-white"><b>El ADN de la venta digital</b> | Módulo 1 </h4>
+              <h4 class="text-white"><b>Cómo vender en internet</b> | Evaluación </h4>
             </div>
             <div class="panel-body">
 
@@ -201,9 +201,16 @@
               </div>
 
               <div class="col-md-3 col-sm-12 p-x-0">
-                <button class="btn btn-sm p-x-3 btn-primary pull-right alinear"><i class="fa fa-chevron-right" aria-hidden="true"></i>SIGUIENTE
+                <!-- <a href="" class="btn btn-sm p-x-3 btn-primary pull-right alinear"><i class="fa fa-chevron-right" aria-hidden="true"></i>SIGUIENTE
+                </a> -->
+                <a href="#alert-contestar" data-toggle="modal">
+                <button class="btn btn-sm p-x-3 btn-primary pull-right alinear">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  SIGUIENTE
                 </button>
+              </a>
               </div>
+
 
               <div class="col-md-9 col-sm-12 m-t-0 p-x-0" style="position:relative;">
                 <div class="progress" style="height:6px; margin-bottom:10px;">
@@ -226,29 +233,43 @@
         </section>
 
         <section class="p-t-0">
-          <h4 class="text-center">
-            <b>¡Felicitaciones!</b> <br>
-            <span style="font-weight:400;">¡Completaste esta actividad correctamente!</span> <br>
-            <!-- <b>Cómo vender en internet</b> -->
-          </h4>
-          <div class="col-md-12 m-b-2">
-              <img src="img/llamas.jpg" style="width:100%;">
+          <h3 class="text-center m-b-3">Evaluación parcial: consolidá tus aprendizajes</h3>
+          <p class="text-center col-md-10 col-md-offset-1 ">Leé con detenimiento cada opción antes de seleccionar la respuesta que considerás correcta. Si te equivocás, seguí las recomendaciones podés revisar los contenidos del curso y volver a responder. ¡Mucha suerte!</p>
+          <div class="col-md-8 col-md-offset-2 col-sm-12 m-t-2">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <p class="m-b-2">Indica si la siguiente afirmación es verdadera o falsa: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis.</p>
+                <!-- <div class="col-xs-12"><hr class="m-t-0" style="opacity:0.6; margin-bottom:10px;"></div> -->
+
+                <div class="checkbox m-l-1" style="">
+                  <label>
+                    <input type="checkbox" class="radio-option" value="">Verdadero
+                  </label>
+                </div>
+
+                <div class="col-xs-12"><hr class="m-t-0" style="opacity:0.6; margin-bottom:10px;"></div>
+
+                <div class="checkbox m-l-1">
+                  <label>
+                    <input type="checkbox" class="radio-option" value="">Falso
+                  </label>
+                </div>
+
+                <!-- <div class="col-xs-12"><hr class="m-t-0" style="opacity:0.6; margin-bottom:10px;"></div> -->
+              </div>
+            </div>
           </div>
-
-            
-
-          <div class="col-xs-12 m-t-0 m-b-1">
-            <div class="text-right">
-            <button class="btn btn-success m-x-1">
+          <div class="col-xs-12 m-t-2">
+            <div class="text-center">
+            <a href="Desarrollo-cursos2.html"><button class="btn btn-success m-x-1">
+              VOLVER AL MAPA
+            </button></a>
+            <a href="#alert-exito-parcial" class="" data-toggle="modal"><button class="btn btn-success m-x-1">
               CONTINUAR
-            </button>
-            </div><!-- <div class="form-group col-xs-12">
-              <span style="font-size: 18px;">Calificá el curso
-                <div id="stars" class="starrr" style="display:inline-block;"></div>
-              </span>
-              <p><small class="text-muted">Calificaste al curso con <span id="count">0</span> estrella(s)</small></p>
-              <textarea class="form-control m-t-1" placeholder="¿Qué opinás del curso?" rows="5" id="comment"></textarea>
-            </div> -->
+            </button></a>
+            </div>
           </div>
         </section>
         </div> <!-- Fin Contenedor -->
@@ -279,6 +300,99 @@
             </div>
         </div>
     </footer>
+
+           <!--  ALERTS DE EVALUACIÓN -->
+
+          <!-- Alert exito evaluacion parcial -->
+           <div id="alert-exito-parcial" class="modal fade in" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <i class="fa fa-check-circle-o fa-5x text-success m-b-3" aria-hidden="true"></i>
+                          <h4 class="m-b-2">¡Has completado esta actividad correctamente!</h4>
+                          <div class="col-xs-12 text-center m-t-3">
+                            <button class="btn btn-success">
+                              DESCARGAR APUNTES
+                            </button>
+                            <a href="Desarrollo-cursos-img2.html"><button class="btn btn-success">
+                              SALIR
+                            </button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+           <!-- Alert exito evaluacion final -->
+           <div id="alert-exito" class="modal fade in" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <i class="fa fa-check-circle-o fa-5x text-success m-b-3" aria-hidden="true"></i>
+                          <h4 class="m-b-2">¡Has completado esta actividad correctamente!</h4>
+                          <div class="col-xs-12 text-center m-t-3">
+                            <button class="btn btn-success">
+                              DESCARGAR APUNTES
+                            </button>
+                            <a href="Desarrollo-cursos-exito.html"><button class="btn btn-success">
+                              SALIR
+                            </button></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+           <!-- Alert no contesta -->
+           <div id="alert-contestar" class="modal fade in" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <i class="fa fa-exclamation-triangle fa-5x text-warning m-b-3" aria-hidden="true"></i>
+                          <h5 class="m-b-2">Tenés que contestar todas las preguntas para continuar</h5>
+                          <div class="col-xs-12 text-center m-t-3">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">ACEPTAR</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          <!-- Alert contesta mal-->
+           <div id="alert-equivocado" class="modal fade in" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <i class="fa fa-check-circle-o fa-5x text-warning m-b-3" aria-hidden="true"></i>
+                          <h4 class="m-b-2">Debes contestar todas las preguntas para continuar.</h4>
+                          <div class="col-xs-12 text-center m-t-3">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">ACEPTAR</button>
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
 
               <!-- Modal registrate-->
               <div id="myModal" class="modal fade in" tabindex="-1" role="dialog">
@@ -562,6 +676,63 @@
               </div>
 
 
+        <!-- MODALES DE CURSOS -->
+
+              <!-- Modal Exito-->
+              <div id="myModalM5" class="modal fade in" tabindex="-1" role="dialog">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-md-12 text-center">
+                          <form class="academia-login" method="POST" action="login.php">
+                            <h4>Ingresá a la Plataforma</h4>
+                            <div class="col-md-10 col-md-offset-1 m-t-2">
+
+                              <div class="col-xs-12 form-group">
+                                <button class="btn btn-primary btn-login btn-facebook btn-block">
+                                  Iniciar sesión con FACEBOOK
+                                </button>
+                                <button class="btn btn-danger btn-login btn-google btn-block">
+                                  Iniciar sesión con GOOGLE
+                                </button>
+
+                                <p class="m-t-1 m-b-0">Ó</p>
+
+                              </div>
+
+
+                              <div class="form-group col-md-8 col-md-offset-2">
+                                <input class="form-control" placeholder="Email" type="text" name="">
+                              </div>
+                              <div class="form-group col-md-8 col-md-offset-2">
+                                <input class="form-control" placeholder="Contraseña" type="password" name="">
+                              </div>
+
+                              <div class="col-xs-12">
+                                <p><small class="text-muted">Acá va el I´m not a robot (nota para backend)</small></p>
+                              </div>
+
+
+                              <div class="col-xs-12 m-t-2 center-block">
+                                <button type="submit" id="ingresar" class="btn btn-primary btn-login">INICIÁ SESIÓN</button>
+                                <div class="row">
+                                  <a class="m-b-2" href=""><small>¿Olvidaste tu contraseña?</small></a>
+                                </div>
+
+                                <h5 class="m-t-2">¿No tenés una cuenta?</h5>
+                                <button type="submit" id="ingresar" class="btn btn-success btn-login">REGISTRATE</button>
+                              </div>
+
+                            </div>
+                          </form>    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 <!-- jQuery 2.2.3 -->
 <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
@@ -628,125 +799,6 @@ $(window).resize(function() {
         $(this).prop('checked', false); 
     }); 
     $(this).prop('checked', true);
-});
-</script>
-
-<!-- CALIFICAR CON ESTRELLAS -->
-
-<script type="text/javascript">
-  var __slice = [].slice;
-
-(function($, window) {
-  var Starrr;
-
-  Starrr = (function() {
-    Starrr.prototype.defaults = {
-      rating: void 0,
-      numStars: 5,
-      change: function(e, value) {}
-    };
-
-    function Starrr($el, options) {
-      var i, _, _ref,
-        _this = this;
-
-      this.options = $.extend({}, this.defaults, options);
-      this.$el = $el;
-      _ref = this.defaults;
-      for (i in _ref) {
-        _ = _ref[i];
-        if (this.$el.data(i) != null) {
-          this.options[i] = this.$el.data(i);
-        }
-      }
-      this.createStars();
-      this.syncRating();
-      this.$el.on('mouseover.starrr', 'span', function(e) {
-        return _this.syncRating(_this.$el.find('span').index(e.currentTarget) + 1);
-      });
-      this.$el.on('mouseout.starrr', function() {
-        return _this.syncRating();
-      });
-      this.$el.on('click.starrr', 'span', function(e) {
-        return _this.setRating(_this.$el.find('span').index(e.currentTarget) + 1);
-      });
-      this.$el.on('starrr:change', this.options.change);
-    }
-
-    Starrr.prototype.createStars = function() {
-      var _i, _ref, _results;
-
-      _results = [];
-      for (_i = 1, _ref = this.options.numStars; 1 <= _ref ? _i <= _ref : _i >= _ref; 1 <= _ref ? _i++ : _i--) {
-        _results.push(this.$el.append("<span class='glyphicon .glyphicon-star-empty'></span>"));
-      }
-      return _results;
-    };
-
-    Starrr.prototype.setRating = function(rating) {
-      if (this.options.rating === rating) {
-        rating = void 0;
-      }
-      this.options.rating = rating;
-      this.syncRating();
-      return this.$el.trigger('starrr:change', rating);
-    };
-
-    Starrr.prototype.syncRating = function(rating) {
-      var i, _i, _j, _ref;
-
-      rating || (rating = this.options.rating);
-      if (rating) {
-        for (i = _i = 0, _ref = rating - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
-          this.$el.find('span').eq(i).removeClass('glyphicon-star-empty').addClass('glyphicon-star');
-        }
-      }
-      if (rating && rating < 5) {
-        for (i = _j = rating; rating <= 4 ? _j <= 4 : _j >= 4; i = rating <= 4 ? ++_j : --_j) {
-          this.$el.find('span').eq(i).removeClass('glyphicon-star').addClass('glyphicon-star-empty');
-        }
-      }
-      if (!rating) {
-        return this.$el.find('span').removeClass('glyphicon-star').addClass('glyphicon-star-empty');
-      }
-    };
-
-    return Starrr;
-
-  })();
-  return $.fn.extend({
-    starrr: function() {
-      var args, option;
-
-      option = arguments[0], args = 2 <= arguments.length ? __slice.call(arguments, 1) : [];
-      return this.each(function() {
-        var data;
-
-        data = $(this).data('star-rating');
-        if (!data) {
-          $(this).data('star-rating', (data = new Starrr($(this), option)));
-        }
-        if (typeof option === 'string') {
-          return data[option].apply(data, args);
-        }
-      });
-    }
-  });
-})(window.jQuery, window);
-
-$(function() {
-  return $(".starrr").starrr();
-});
-
-$( document ).ready(function() {
-      
-  $('#stars').on('starrr:change', function(e, value){
-    $('#count').html(value);
-  });
-  
-  $('#stars-existing').on('starrr:change', function(e, value){
-    $('#count-existing').html(value);
-  });
 });
 </script>
 
