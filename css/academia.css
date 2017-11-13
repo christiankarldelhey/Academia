@@ -99,6 +99,10 @@ a.p-comercializacion:hover, a.p-comercializacion:focus, a.p-comercializacion:hov
 
 /*Equipo de trabajo - 
 Usar bg-primary*/
+a.panel-default:hover .text-info strong, a.panel-default:focus .text-info strong {
+    color: #fff !important;
+}
+
 
 
 /*Administracion*/
