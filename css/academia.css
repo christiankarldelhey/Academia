@@ -156,7 +156,7 @@ a.p-marco-regulatorio:hover, a.p-marco-regulatorio:focus, a.p-marco-regulatorio:
 /*Comunicacion - 
 Usar bg-warning*/
 a.p-emprender:hover, a.p-emprender:focus, a.p-emprender:hover strong, a.p-emprender:focus strong {
-    background: #8a6d3b;
+    background-color: #fdc221;
     color: #fff !important;
 }
 
