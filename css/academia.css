@@ -19,6 +19,10 @@
 	width:100%;
 }
 
+.debold {
+    font-weight:400 !important;
+}
+
 
 /*PALETA DE COLORES DE ACADEMIA*/
 
@@ -637,6 +641,19 @@ ul.dropdown-menu li a {
 
 }
 
+
+.input-oculto {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.muestra-input:checked ~ .input-oculto,
+ {
+  opacity: 1;
+  max-height: 100px; 
+  overflow: visible;
+}
 
 
 

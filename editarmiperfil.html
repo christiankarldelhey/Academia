@@ -294,10 +294,26 @@
                                             </div>
                                         </div>
                                         <div class="col-md-12">
-                                            <label class="control-label" for="txtxxx">¿Cuál es tu relación con la empresa? <span class="requiredField">*</span></label>
-                                            <div class="academia-checklist m-b-2">
+                                            <label class="control-label" for="txtxxx">¿Cuál es tu rol en la empresa? <span class="requiredField">*</span></label>
+                                            <div class="radio">
+                                              <label><input type="radio" name="optradio">Dueño</label>
+                                            </div>
+                                            <div class="radio">
+                                              <label><input type="radio" name="optradio">Empleado</label>
+                                            </div>
+                                            <div class="radio">
+                                              <label><input class="muestra-input" type="radio" name="optradio">Otro</label>
+                                            </div>
 
-                                              <!-- <div class="checkbox">
+                                            <div class="form-group input-oculto">
+                                                <label class="control-label">Nombre*</label> 
+                                                <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
+                                            </div>
+                                            
+
+                                            <!--<div class="academia-checklist m-b-2">
+
+                                               <div class="checkbox">
                                                 <label class="pull-right checkbox-inline"><input type="checkbox" id="dueño" value="">Dueño</label>
                                                 
                                                 
@@ -310,25 +326,27 @@
                                                 
                                                 <label class="pull-right checkbox-inline"><input type="checkbox" id="empleado" value="">Empleado</label>
                                             </div>
-                                        </div> -->
+                                        </div> 
 
                                         <div class="checkbox">
                                           <label><input type="checkbox" id="dueño" value="">Empleado</label>
                                         </div>
-                                        <div class="checkbox">
-                                          <label><input type="checkbox" value="">Familiar</label>
-                                        </div>
+                                        
                                         <div class="checkbox">
                                           <label><input type="checkbox" id="empleado" value="">Dueño</label>
                                         </div>  
-                                    </div> 
+                                        <div class="checkbox">
+                                          <label><input type="checkbox" value="">Otro</label>
+                                        </div>
+                                    </div> -->
+
                                     </div>  
-                                    <div class="col-md-12">
+                                    <!-- <div class="col-md-12">
                                         <div class="form-group">
                                                 <label class="control-label">¿Cuál es tu función en la empresa? *</label> 
                                                 <textarea class="form-control" cols="4" type="text" value=""></textarea>
                                             </div>
-                                        </div>                                                                                
+                                        </div>        -->                                                                         
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label class="control-label">Tamaño</label> 
@@ -798,7 +816,8 @@
 
 </script>
 
-<script type="text/javascript">
+<!-- CHECKLIST EMPLEADO DUEÑO -->
+<!-- <script type="text/javascript">
     $(document).ready(function(){
     $('#dueño').on('change', function(){        
         if($('#dueño:checked').length){
@@ -822,7 +841,7 @@
     
     
 })
-</script>
+</script> -->
 
 <!-- Autocomplete -->
 <script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
