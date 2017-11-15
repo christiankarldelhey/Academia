@@ -295,18 +295,21 @@
                                         </div>
                                         <div class="col-md-12">
                                             <label class="control-label" for="txtxxx">¿Cuál es tu rol en la empresa? <span class="requiredField">*</span></label>
+                                        
                                             <div class="radio">
-                                              <label><input type="radio" name="optradio">Dueño</label>
+                                              <label><input type="radio" name="test">Dueño</label>
                                             </div>
                                             <div class="radio">
-                                              <label><input type="radio" name="optradio">Empleado</label>
+                                              <label><input type="radio" name="test"  class="muestra-input">Empleado</label>
                                             </div>
+                                            
                                             <div class="radio">
-                                              <label><input class="muestra-input" type="radio" name="optradio">Otro</label>
+                                              <label><input id='see-me' name='test' class="muestra-input" type="radio">Otro</label>
                                             </div>
+                                        
 
-                                            <div class="form-group input-oculto">
-                                                <label class="control-label">Nombre*</label> 
+                                            <div id='show-me-two' style='display:none;' class="form-group input-oculto">
+                                                <label class="control-label">¿Cuál?</label> 
                                                 <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
                                             </div>
                                             
@@ -813,6 +816,26 @@
         $('span[data-toggle="'+tog+'"]').not('[data-value="'+sel+'"]').removeClass('active btn-primary').addClass('notActive btn-default');
         $('span[data-toggle="'+tog+'"][data-value="'+sel+'"]').removeClass('notActive btn-default').addClass('active btn-primary');
     });	
+
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function () 
+ { 
+      
+  $("#see-me").click(function()
+  {
+    $("#show-me-two:hidden").show('slow');
+   });
+
+    $('.muestra-input').click(function()
+  {
+    $('#show-me-two').hide();
+   });
+  
+  
+ 
+ });
 
 </script>
 

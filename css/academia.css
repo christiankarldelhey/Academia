@@ -20,7 +20,7 @@
 }
 
 .debold {
-    font-weight:400 !important;
+    font-weight:500 !important;
 }
 
 
@@ -61,16 +61,17 @@ a.p-comercio-exterior:hover, a.p-comercio-exterior:focus, a.p-comercio-exterior:
 Usar bg-success
 */
 a.p-medio-ambiente:hover, a.p-medio-ambiente:focus, a.p-medio-ambiente:hover strong, a.p-medio-ambiente:focus strong {
-    background: #3c763d;
+    background: #9ac343;
     color: #fff !important;
 }
 
 /*Calidad - 
 Usar bg-info*/
 a.p-calidad:hover, a.p-calidad:focus, a.p-calidad:hover strong, a.p-calidad:focus strong{
-    background: #d9edf7;
+    background: #1ebcee;
     color: #fff !important;
 }
+
 
 
 /*Seguridad*/
@@ -168,17 +169,25 @@ a.p-emprender:hover, a.p-emprender:focus, a.p-emprender:hover strong, a.p-empren
     color: #fff !important;
 }
 
+/*FILTROS*/
 
-
-
-
-
-
-
-.text-gris {
-	color: #808080 !important;
+.filtros {
+    font-size:1.4em;
+    font-weight:700;
+    color:#767676;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
+.text-gris {
+    font-size:24px;
+    font-weight:500;
+    color:#767676;
+}
+
+.p-ordenar {
+    padding-left: 10px!important;
+}
 
 .academia-filtros {
 	font-size: 18px !important;
@@ -641,8 +650,9 @@ ul.dropdown-menu li a {
 
 }
 
+/*INPUT*/
 
-.input-oculto {
+/*.input-oculto {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -653,7 +663,17 @@ ul.dropdown-menu li a {
   opacity: 1;
   max-height: 100px; 
   overflow: visible;
+}*/
+
+/*HOVER-FORO*/
+
+
+.foro-heading:hover {
+    background: #5bc0de !important;
 }
+
+
+
 
 
 
