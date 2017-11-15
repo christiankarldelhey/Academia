@@ -19,8 +19,12 @@
 	width:100%;
 }
 
-.debold {
+.bold-500 {
     font-weight:500 !important;
+}
+
+.debold {
+    font-weight:400 !important;
 }
 
 

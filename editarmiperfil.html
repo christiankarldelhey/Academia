@@ -297,18 +297,18 @@
                                             <label class="control-label" for="txtxxx">¿Cuál es tu rol en la empresa? <span class="requiredField">*</span></label>
                                         
                                             <div class="radio">
-                                              <label><input type="radio" name="test">Dueño</label>
+                                              <label><input type="radio" name="test" class="muestra-input">Dueño</label>
                                             </div>
                                             <div class="radio">
                                               <label><input type="radio" name="test"  class="muestra-input">Empleado</label>
                                             </div>
                                             
                                             <div class="radio">
-                                              <label><input id='see-me' name='test' class="muestra-input" type="radio">Otro</label>
+                                              <label><input id='otro' name='test' class="" type="radio">Otro</label>
                                             </div>
                                         
 
-                                            <div id='show-me-two' style='display:none;' class="form-group input-oculto">
+                                            <div id='input-otro' style='display:none;' class="form-group">
                                                 <label class="control-label">¿Cuál?</label> 
                                                 <input class="form-control" data-inputmask="" data-mask="" type="text" value="">
                                             </div>
@@ -823,15 +823,17 @@
     $(document).ready(function () 
  { 
       
-  $("#see-me").click(function()
-  {
-    $("#show-me-two:hidden").show('slow');
-   });
-
     $('.muestra-input').click(function()
   {
-    $('#show-me-two').hide();
+    $("#input-otro").css("display", "none");
    });
+
+  $("#otro").click(function()
+  {
+    $("#input-otro").show('slow');
+   });
+
+
   
   
  
