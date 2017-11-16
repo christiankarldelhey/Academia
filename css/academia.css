@@ -366,6 +366,7 @@ img.sello {
 
 /*BARRA DE PROGRESO CURSO*/
 
+
 .form-azul .progress {
     overflow: visible;
 }
@@ -676,8 +677,16 @@ ul.dropdown-menu li a {
     background: #5bc0de !important;
 }
 
+.row-mi-actividad .progress {
+    margin-bottom: 0px !important;
+    margin-top: 10px;
+}
 
-
+.hr-miactividad {
+    opacity:0.4 !important;
+    margin-top:5px !important;
+    margin-bottom:5px !important;
+}
 
 
 
