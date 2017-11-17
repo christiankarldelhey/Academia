@@ -689,4 +689,22 @@ ul.dropdown-menu li a {
 }
 
 
+button {
+    
+}
+
+/*button span {
+vertical-align: middle !important;
+    
+
+}*/
+
+.btn-centrado span, .btn-centrado .fa{
+    height:inherit;
+    vertical-align: inherit;
+} 
+
+.btn-centrado span {
+    line-height: 26px !important;
+}
 
